@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CB_DB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="123"/>
+        </scene>
+        <!--Simple List View Controller-->
+        <scene sceneID="NJy-QW-b0C">
+            <objects>
+                <viewController id="eYj-tr-ZN1" customClass="SimpleListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RzT-2d-Bil"/>
+                        <viewControllerLayoutGuide type="bottom" id="IBO-ib-K1X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h1F-au-bLt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dSW-dM-XbD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Switch Clinic" id="t32-XG-0pn">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="CFO-m4-Tbe">
+                                            <connections>
+                                                <action selector="closePressed:" destination="eYj-tr-ZN1" id="T9Q-xE-nJf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="3B7-7u-G42">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eYj-tr-ZN1" id="34I-2P-JSq"/>
+                                    <outlet property="delegate" destination="eYj-tr-ZN1" id="gEt-M0-qqZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dSW-dM-XbD" secondAttribute="trailing" constant="-20" id="9CP-6m-LEP"/>
+                            <constraint firstItem="3B7-7u-G42" firstAttribute="leading" secondItem="h1F-au-bLt" secondAttribute="leadingMargin" constant="-20" id="Jsl-Vs-KLT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3B7-7u-G42" secondAttribute="trailing" constant="-20" id="mRg-pg-lQD"/>
+                            <constraint firstItem="dSW-dM-XbD" firstAttribute="top" secondItem="RzT-2d-Bil" secondAttribute="bottom" id="wZv-M6-v6z"/>
+                            <constraint firstItem="IBO-ib-K1X" firstAttribute="top" secondItem="3B7-7u-G42" secondAttribute="bottom" id="xfL-2L-9Mh"/>
+                            <constraint firstItem="dSW-dM-XbD" firstAttribute="leading" secondItem="h1F-au-bLt" secondAttribute="leadingMargin" constant="-20" id="xq9-MC-F4W"/>
+                            <constraint firstItem="3B7-7u-G42" firstAttribute="top" secondItem="dSW-dM-XbD" secondAttribute="bottom" id="ysZ-8O-9rv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nZB-lH-mAa"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="3B7-7u-G42" id="KGs-sy-hwk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nIe-DT-xdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272" y="788"/>
+        </scene>
+    </scenes>
+</document>

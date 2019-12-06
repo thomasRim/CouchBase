@@ -1,0 +1,32 @@
+//
+//  Practitioner.swift
+//  Scanner
+//
+//  Created by Ernest Surudo on 2015-09-03.
+//  Copyright © 2015 Orthogenic Laboratories. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+extension OGPractitioner: SimpleListItem {
+    
+    struct Constants {
+        static let iconImage: UIImage = UIImage()
+    }
+    
+    // MARK: - SimpleListItem
+    
+    var cellDisplayText: String {
+        get {
+            return self.name ?? ""
+        }
+    }
+    
+    var cellDisplayImage: UIImage {
+        get {
+            return Constants.iconImage
+        }
+    }
+    
+}
