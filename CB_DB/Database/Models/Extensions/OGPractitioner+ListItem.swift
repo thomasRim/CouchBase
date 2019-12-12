@@ -17,7 +17,7 @@ extension OGPractitioner: SimpleListItem {
     }
     
     var cellDisplayImage: UIImage {
-        get { return FAKIonIcons.medkitIcon(withSize: 64)?.image(with: CGSize(width: 64, height: 64)) ?? UIImage() }
+        get { return FAKIonIcons.medkitIcon(withSize: 64).image(with: CGSize(width: 64, height: 64)) ?? UIImage() }
     }
     
 }

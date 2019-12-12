@@ -19,8 +19,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smoke-bg" translatesAutoresizingMaskIntoConstraints="NO" id="eOA-0S-2yy">
+                                <rect key="frame" x="0.0" y="8" width="1024" height="752"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="H5Q-dP-QNT">
-                                <rect key="frame" x="4" y="20" width="1016" height="718"/>
+                                <rect key="frame" x="4" y="20" width="1016" height="740"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="7QJ-lp-Czi" customClass="OrderDetailCollectionViewFlowLayout">
                                     <size key="itemSize" width="215" height="205"/>
@@ -159,49 +162,15 @@
                                     <outlet property="delegate" destination="SMB-4K-imi" id="YRn-nB-oOl"/>
                                 </connections>
                             </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkU-af-PCI" userLabel="Battery Container View">
-                                <rect key="frame" x="0.0" y="738" width="1024" height="30"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sensor not connected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udL-tv-afS">
-                                        <rect key="frame" x="16" y="7" width="142.5" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJE-zy-P0o" customClass="BatteryView" customModule="CB_DB" customModuleProvider="target">
-                                        <rect key="frame" x="166.5" y="9.5" width="32" height="12"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="12" id="O0Q-nn-xIt"/>
-                                            <constraint firstAttribute="width" constant="32" id="Tsp-cC-ZMm"/>
-                                        </constraints>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sensor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ2-Yf-7lU">
-                                        <rect key="frame" x="206.5" y="7" width="45.5" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.89999997620000005" green="0.89999997620000005" blue="0.89999997620000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="TJE-zy-P0o" firstAttribute="centerY" secondItem="udL-tv-afS" secondAttribute="centerY" id="A06-Ga-0GH"/>
-                                    <constraint firstAttribute="bottom" secondItem="udL-tv-afS" secondAttribute="bottom" constant="6" id="Cm9-jP-fcU"/>
-                                    <constraint firstItem="udL-tv-afS" firstAttribute="leading" secondItem="GkU-af-PCI" secondAttribute="leading" constant="16" id="LKJ-Nc-bOo"/>
-                                    <constraint firstItem="fJ2-Yf-7lU" firstAttribute="leading" secondItem="TJE-zy-P0o" secondAttribute="trailing" constant="8" id="gOq-KN-DiL"/>
-                                    <constraint firstAttribute="height" constant="30" id="jmt-yC-3GT"/>
-                                    <constraint firstItem="fJ2-Yf-7lU" firstAttribute="centerY" secondItem="udL-tv-afS" secondAttribute="centerY" id="pkk-r4-b9x"/>
-                                    <constraint firstItem="TJE-zy-P0o" firstAttribute="leading" secondItem="udL-tv-afS" secondAttribute="trailing" constant="8" id="ycr-Wp-YcD"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GkU-af-PCI" firstAttribute="top" secondItem="H5Q-dP-QNT" secondAttribute="bottom" id="8qd-51-wok"/>
-                            <constraint firstItem="GkU-af-PCI" firstAttribute="leading" secondItem="z70-C7-iro" secondAttribute="leadingMargin" constant="-20" id="EXa-U2-HsX"/>
+                            <constraint firstItem="eOA-0S-2yy" firstAttribute="top" secondItem="UGC-um-26e" secondAttribute="bottom" constant="8" symbolic="YES" id="8zS-Ky-k5l"/>
                             <constraint firstItem="H5Q-dP-QNT" firstAttribute="top" secondItem="UGC-um-26e" secondAttribute="bottom" constant="20" id="F1T-1g-fP6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GkU-af-PCI" secondAttribute="trailing" constant="-20" id="Fda-k1-if3"/>
-                            <constraint firstItem="PjG-Ef-yV6" firstAttribute="top" secondItem="GkU-af-PCI" secondAttribute="bottom" id="Fzq-tT-A0S"/>
+                            <constraint firstItem="PjG-Ef-yV6" firstAttribute="top" secondItem="eOA-0S-2yy" secondAttribute="bottom" constant="8" symbolic="YES" id="P7e-1s-LrA"/>
+                            <constraint firstItem="eOA-0S-2yy" firstAttribute="leading" secondItem="epM-IJ-uo5" secondAttribute="leading" id="XOv-4w-Z4o"/>
+                            <constraint firstItem="epM-IJ-uo5" firstAttribute="trailing" secondItem="eOA-0S-2yy" secondAttribute="trailing" id="Yhf-0a-krf"/>
+                            <constraint firstItem="PjG-Ef-yV6" firstAttribute="top" secondItem="H5Q-dP-QNT" secondAttribute="bottom" constant="8" symbolic="YES" id="fwy-lV-cUk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="H5Q-dP-QNT" secondAttribute="trailing" constant="-16" id="n5E-xN-Sc9"/>
                             <constraint firstItem="H5Q-dP-QNT" firstAttribute="leading" secondItem="z70-C7-iro" secondAttribute="leadingMargin" constant="-16" id="yGz-AA-KUD"/>
                         </constraints>
@@ -429,4 +398,7 @@
             <point key="canvasLocation" x="2666.6015625" y="2341.40625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="smoke-bg" width="3600" height="1608"/>
+    </resources>
 </document>

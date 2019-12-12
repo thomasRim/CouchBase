@@ -22,6 +22,7 @@
 		3BC544BD23A281BC0071E78E /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544BC23A281BC0071E78E /* UIColor+hex.swift */; };
 		3BC544BF23A285040071E78E /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544BE23A285030071E78E /* AppInfo.swift */; };
 		3BC544C123A2850A0071E78E /* DateFormattingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544C023A2850A0071E78E /* DateFormattingManager.swift */; };
+		7A0D42CC23A3057F00B6B822 /* Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D42CB23A3057F00B6B822 /* Test.mm */; };
 		7A1535692384A046003FF22E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1535682384A046003FF22E /* AppDelegate.swift */; };
 		7A15356B2384A046003FF22E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A15356A2384A046003FF22E /* SceneDelegate.swift */; };
 		7A1535722384A04D003FF22E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1535712384A04D003FF22E /* Assets.xcassets */; };
@@ -82,6 +83,9 @@
 		3BC544C023A2850A0071E78E /* DateFormattingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormattingManager.swift; sourceTree = "<group>"; };
 		44E42F9B3623D54543ACCF12 /* Pods-CB_DB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB_DB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CB_DB/Pods-CB_DB.debug.xcconfig"; sourceTree = "<group>"; };
 		686DAC9CABEEC3185F8381D2 /* Pods-CB_DB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB_DB.release.xcconfig"; path = "Target Support Files/Pods-CB_DB/Pods-CB_DB.release.xcconfig"; sourceTree = "<group>"; };
+		7A0D42C723A3052500B6B822 /* CB_DB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CB_DB-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A0D42CB23A3057F00B6B822 /* Test.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Test.mm; sourceTree = "<group>"; };
+		7A0D42CD23A3058B00B6B822 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		7A1535652384A046003FF22E /* CB_DB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CB_DB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1535682384A046003FF22E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A15356A2384A046003FF22E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +190,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7A0D42C623A3050B00B6B822 /* Scans */ = {
+			isa = PBXGroup;
+			children = (
+				7A0D42C723A3052500B6B822 /* CB_DB-Bridging-Header.h */,
+				7A0D42CB23A3057F00B6B822 /* Test.mm */,
+				7A0D42CD23A3058B00B6B822 /* Test.h */,
+			);
+			path = Scans;
+			sourceTree = "<group>";
+		};
 		7A15355C2384A046003FF22E = {
 			isa = PBXGroup;
 			children = (
@@ -225,8 +239,8 @@
 		7A2E9B5923A19CF0004A449B /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				3B1EDCA323A2C0EF00216DC0 /* Main.storyboard */,
 				7A2E9B6723A19DCB004A449B /* Login.storyboard */,
+				3B1EDCA323A2C0EF00216DC0 /* Main.storyboard */,
 				7A2E9B6823A19DCB004A449B /* Order.storyboard */,
 				7A2E9B6923A19DCB004A449B /* Scans.storyboard */,
 				7A2E9B5B23A19D3A004A449B /* ShortOrderInfo.storyboard */,
@@ -241,6 +255,7 @@
 				3BC544B923A277EA0071E78E /* Clinic */,
 				3BC544B823A277C50071E78E /* Patient */,
 				3BC544B723A277BC0071E78E /* Order */,
+				7A0D42C623A3050B00B6B822 /* Scans */,
 				3BC544BA23A27DA80071E78E /* PractitionerViewEditViewController.swift */,
 				7AF9028723A1A44D00CD241B /* DatePopoverViewController.swift */,
 				7A207983238B64A2009447BB /* SimpleListViewController.swift */,
@@ -358,7 +373,7 @@
 				TargetAttributes = {
 					7A1535642384A046003FF22E = {
 						CreatedOnToolsVersion = 11.2.1;
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -444,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0D42CC23A3057F00B6B822 /* Test.mm in Sources */,
 				7AF9029623A1A4B700CD241B /* OGOrder+SubmissionHelpers.swift in Sources */,
 				7AF9029323A1A4B700CD241B /* OGClinic+Forms.swift in Sources */,
 				3BC544A923A2757E0071E78E /* Notifications.swift in Sources */,
@@ -637,6 +653,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rootHome.CB-DB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CB_DB/Controllers/Scans/CB_DB-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -659,6 +676,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rootHome.CB-DB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CB_DB/Controllers/Scans/CB_DB-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

@@ -11,4 +11,30 @@ import UIKit
 
 class OrderScansViewController: UIViewController {
     @IBOutlet weak fileprivate var collectionView: UICollectionView?
+
+    var assets = [OGAsset]()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let test = Test()
+        let isTest = test.isTest
+    }
+
+}
+
+
+extension OrderScansViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return assets.count
+    }
+
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
 }

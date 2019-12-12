@@ -208,16 +208,16 @@ extension PatientsMasterViewController: UITableViewDelegate, UITableViewDataSour
         let orderTabBarController = UIStoryboard(name: "Order", bundle: nil).instantiateInitialViewController() as? OrderTabBarController
     orderTabBarController?.navigationController?.setNavigationBarHidden(true, animated: false)
 
-//        let  orderController = orderTabBarController?.viewControllers?[0] as? OrderScansViewController
-//        orderController?.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem;
-//        orderController?.navigationItem.leftItemsSupplementBackButton = true;
-//        orderController?.navigationController?.isNavigationBarHidden = false;
-//
-//        orderTabBarController?.selectedViewController = orderController;
-//
-//        if let vc = orderController {
-//            detailNavController?.pushViewController(vc, animated: false)
-//        }
+        let  orderController = orderTabBarController?.viewControllers?[0] as? OrderScansViewController
+        orderController?.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem;
+        orderController?.navigationItem.leftItemsSupplementBackButton = true;
+        orderController?.navigationController?.isNavigationBarHidden = false;
+
+        orderTabBarController?.selectedViewController = orderController;
+
+        if let vc = orderTabBarController {
+            detailNavController?.pushViewController(vc, animated: false)
+        }
     }
 
     func configure(cell:UITableViewCell, at indexPath: IndexPath) {

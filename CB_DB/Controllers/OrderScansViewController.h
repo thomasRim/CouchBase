@@ -17,16 +17,6 @@
 @class SensorBatteryViewController;
 @class Order;
 
-//typedef NS_ENUM(NSInteger, ScanFootSubtypes) {
-//    ScanFootSubtypes_NONE = -1,
-//    ScanFootSubtypes_ToeUp,
-//    ScanFootSubtypes_ToeDown,
-//    ScanFootSubtypes_FoamBox,
-//    ScanFootSubtypest_PlasterCast,
-//};
-
-
-
 @interface OrderScansViewController : ImagePickerDetailViewController<
 UIToolbarDelegate
 , UICollectionViewDataSource

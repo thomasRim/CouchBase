@@ -17,7 +17,7 @@ extension OGClinic: SimpleListItem {
 
     var cellDisplayImage: UIImage {
         get {
-            return FAKIonIcons.chevronRightIcon(withSize: 64).image(with: CGSize(width: 80, height: 80))
+            return FAKIonIcons.iosHomeIcon(withSize: 64).image(with: CGSize(width: 80, height: 80))
         }
     }
     
