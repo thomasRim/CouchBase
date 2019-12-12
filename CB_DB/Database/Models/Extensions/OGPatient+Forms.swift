@@ -29,7 +29,7 @@ extension OGPatient: FormLoadable {
     
     // MARK: - Publics
     
-    static func formDescriptorPatientInfoEditWithPatient(_ patient: OGPatient) -> XLFormDescriptor {
+    static func formDescriptorPatientInfoEditWithPatient(_ patient: OGPatient?) -> XLFormDescriptor {
         let descriptor: XLFormDescriptor = self.formDescriptorForPatient(patient)
         descriptor.assignFirstResponderOnShow = false
         
@@ -60,7 +60,7 @@ extension OGPatient: FormLoadable {
         return descriptor
     }
 
-    func loadValuesFromForm(_ form: XLFormDescriptor, sectionName: String?) {
+    func loadValuesFromForm(_ form: XLFormDescriptor) {
 
         var row: XLFormRowDescriptor
         row = form.formRow(withTag: FormRowTags.FirstName.rawValue)!
@@ -68,7 +68,7 @@ extension OGPatient: FormLoadable {
         row = form.formRow(withTag: FormRowTags.LastName.rawValue)!
         self.lastName = row.value as! String
         row = form.formRow(withTag: FormRowTags.DateOfBirth.rawValue)!
-        self.dateOfBirth = row.value as! Date
+        self.dateOfBirth = (row.value as! Date).timeIntervalSince1970
         row = form.formRow(withTag: FormRowTags.Weight.rawValue)!
         self.weight = Int(row.value as! NSNumber)
         row = form.formRow(withTag: FormRowTags.WeightUnit.rawValue)!
@@ -121,7 +121,7 @@ extension OGPatient: FormLoadable {
                                     title: NSLocalizedString("XLFDateOfBirth", comment: "DOB form label"))
         row.isRequired = true
         if patient != nil {
-            row.value = patient!.dateOfBirth as Date
+            row.value = patient!.dateOfBirth as Double
         } else {
             var defaultComponents = DateComponents()
             defaultComponents.year = 1990

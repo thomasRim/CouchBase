@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1EDCA223A2BD1A00216DC0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1EDCA123A2BD1A00216DC0 /* Constants.swift */; };
+		3B1EDCA423A2C0EF00216DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1EDCA323A2C0EF00216DC0 /* Main.storyboard */; };
+		3B205B3C23A2884E0092F859 /* String+fileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B205B3B23A2884E0092F859 /* String+fileName.swift */; };
+		3B205B3E23A28EBB0092F859 /* OrderSubmissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B205B3D23A28EBA0092F859 /* OrderSubmissionManager.swift */; };
+		3BC544A723A274540071E78E /* FormLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544A623A274540071E78E /* FormLoadable.swift */; };
+		3BC544A923A2757E0071E78E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544A823A2757E0071E78E /* Notifications.swift */; };
+		3BC544B023A2774A0071E78E /* ClinicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544AA23A277490071E78E /* ClinicDetailViewController.swift */; };
+		3BC544B223A2774A0071E78E /* ClinicNewEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544AC23A277490071E78E /* ClinicNewEditViewController.swift */; };
+		3BC544B323A2774A0071E78E /* PatientNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544AE23A2774A0071E78E /* PatientNewViewController.swift */; };
+		3BC544B423A2774A0071E78E /* PatientEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544AF23A2774A0071E78E /* PatientEditViewController.swift */; };
+		3BC544B623A277B90071E78E /* OrderHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544B523A277B90071E78E /* OrderHistoryViewController.swift */; };
+		3BC544BB23A27DA80071E78E /* PractitionerViewEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544BA23A27DA80071E78E /* PractitionerViewEditViewController.swift */; };
+		3BC544BD23A281BC0071E78E /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544BC23A281BC0071E78E /* UIColor+hex.swift */; };
+		3BC544BF23A285040071E78E /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544BE23A285030071E78E /* AppInfo.swift */; };
+		3BC544C123A2850A0071E78E /* DateFormattingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544C023A2850A0071E78E /* DateFormattingManager.swift */; };
 		7A1535692384A046003FF22E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1535682384A046003FF22E /* AppDelegate.swift */; };
 		7A15356B2384A046003FF22E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A15356A2384A046003FF22E /* SceneDelegate.swift */; };
 		7A1535722384A04D003FF22E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1535712384A04D003FF22E /* Assets.xcassets */; };
@@ -50,6 +65,21 @@
 
 /* Begin PBXFileReference section */
 		133D6A53C2AE5F283779AA1A /* Pods_CB_DB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CB_DB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1EDCA123A2BD1A00216DC0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3B1EDCA323A2C0EF00216DC0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3B205B3B23A2884E0092F859 /* String+fileName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+fileName.swift"; sourceTree = "<group>"; };
+		3B205B3D23A28EBA0092F859 /* OrderSubmissionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSubmissionManager.swift; sourceTree = "<group>"; };
+		3BC544A623A274540071E78E /* FormLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormLoadable.swift; path = Models/FormLoadable.swift; sourceTree = "<group>"; };
+		3BC544A823A2757E0071E78E /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		3BC544AA23A277490071E78E /* ClinicDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicDetailViewController.swift; sourceTree = "<group>"; };
+		3BC544AC23A277490071E78E /* ClinicNewEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicNewEditViewController.swift; sourceTree = "<group>"; };
+		3BC544AE23A2774A0071E78E /* PatientNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientNewViewController.swift; sourceTree = "<group>"; };
+		3BC544AF23A2774A0071E78E /* PatientEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientEditViewController.swift; sourceTree = "<group>"; };
+		3BC544B523A277B90071E78E /* OrderHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryViewController.swift; sourceTree = "<group>"; };
+		3BC544BA23A27DA80071E78E /* PractitionerViewEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PractitionerViewEditViewController.swift; sourceTree = "<group>"; };
+		3BC544BC23A281BC0071E78E /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		3BC544BE23A285030071E78E /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		3BC544C023A2850A0071E78E /* DateFormattingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormattingManager.swift; sourceTree = "<group>"; };
 		44E42F9B3623D54543ACCF12 /* Pods-CB_DB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB_DB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CB_DB/Pods-CB_DB.debug.xcconfig"; sourceTree = "<group>"; };
 		686DAC9CABEEC3185F8381D2 /* Pods-CB_DB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB_DB.release.xcconfig"; path = "Target Support Files/Pods-CB_DB/Pods-CB_DB.release.xcconfig"; sourceTree = "<group>"; };
 		7A1535652384A046003FF22E /* CB_DB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CB_DB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +138,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B1EDCA023A2BCE700216DC0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3BC544A823A2757E0071E78E /* Notifications.swift */,
+				3B1EDCA123A2BD1A00216DC0 /* Constants.swift */,
+				3BC544BE23A285030071E78E /* AppInfo.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3BC544B723A277BC0071E78E /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				7A2E9B6323A19DB5004A449B /* OrderTabBarController.swift */,
+				3BC544B523A277B90071E78E /* OrderHistoryViewController.swift */,
+				7A2E9B7223A19E55004A449B /* OrderScansViewController.swift */,
+				7A2E9B6D23A19E47004A449B /* ShortOrderInfoViewController.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		3BC544B823A277C50071E78E /* Patient */ = {
+			isa = PBXGroup;
+			children = (
+				3BC544AF23A2774A0071E78E /* PatientEditViewController.swift */,
+				3BC544AE23A2774A0071E78E /* PatientNewViewController.swift */,
+				7A2E9B7723A1A183004A449B /* PatientsMasterViewController.swift */,
+			);
+			path = Patient;
+			sourceTree = "<group>";
+		};
+		3BC544B923A277EA0071E78E /* Clinic */ = {
+			isa = PBXGroup;
+			children = (
+				3BC544AA23A277490071E78E /* ClinicDetailViewController.swift */,
+				3BC544AC23A277490071E78E /* ClinicNewEditViewController.swift */,
+			);
+			path = Clinic;
+			sourceTree = "<group>";
+		};
 		72E4DD1CCE27008240A5CB82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +214,7 @@
 				7AA11FFF238F1C43006AF420 /* Database */,
 				7A2E9B7423A19F35004A449B /* Managers */,
 				7AF9027A23A1A35C00CD241B /* Utils */,
+				3B1EDCA023A2BCE700216DC0 /* Sources */,
 				7A1535712384A04D003FF22E /* Assets.xcassets */,
 				7A1535732384A04D003FF22E /* LaunchScreen.storyboard */,
 				7A1535762384A04D003FF22E /* Info.plist */,
@@ -154,6 +225,7 @@
 		7A2E9B5923A19CF0004A449B /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				3B1EDCA323A2C0EF00216DC0 /* Main.storyboard */,
 				7A2E9B6723A19DCB004A449B /* Login.storyboard */,
 				7A2E9B6823A19DCB004A449B /* Order.storyboard */,
 				7A2E9B6923A19DCB004A449B /* Scans.storyboard */,
@@ -165,13 +237,13 @@
 		7A2E9B5A23A19D05004A449B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7AF9028723A1A44D00CD241B /* DatePopoverViewController.swift */,
-				7A2E9B7223A19E55004A449B /* OrderScansViewController.swift */,
-				7A2E9B6D23A19E47004A449B /* ShortOrderInfoViewController.swift */,
-				7A2E9B6323A19DB5004A449B /* OrderTabBarController.swift */,
-				7A2E9B7723A1A183004A449B /* PatientsMasterViewController.swift */,
-				7A207983238B64A2009447BB /* SimpleListViewController.swift */,
 				7A20794E238B640D009447BB /* LoginViewController.swift */,
+				3BC544B923A277EA0071E78E /* Clinic */,
+				3BC544B823A277C50071E78E /* Patient */,
+				3BC544B723A277BC0071E78E /* Order */,
+				3BC544BA23A27DA80071E78E /* PractitionerViewEditViewController.swift */,
+				7AF9028723A1A44D00CD241B /* DatePopoverViewController.swift */,
+				7A207983238B64A2009447BB /* SimpleListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +251,8 @@
 		7A2E9B7423A19F35004A449B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				3B205B3D23A28EBA0092F859 /* OrderSubmissionManager.swift */,
+				3BC544C023A2850A0071E78E /* DateFormattingManager.swift */,
 				7A2E9B7523A19F86004A449B /* AuthenticationManager.swift */,
 				7A207981238B646E009447BB /* OGDatabaseManager.swift */,
 			);
@@ -188,6 +262,7 @@
 		7AA11FFF238F1C43006AF420 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				3BC544A623A274540071E78E /* FormLoadable.swift */,
 				7AA12007238F1CC3006AF420 /* OGConvertable.swift */,
 				7AA12002238F1CB3006AF420 /* Models */,
 			);
@@ -229,9 +304,11 @@
 				7AF9027F23A1A3DE00CD241B /* Date+format.swift */,
 				7AF9027C23A1A3DE00CD241B /* Enum_String+localized.swift */,
 				7AF9027B23A1A3DD00CD241B /* String+localize.swift */,
+				3B205B3B23A2884E0092F859 /* String+fileName.swift */,
 				7AF9027E23A1A3DE00CD241B /* UIAlertController+OKCancel.swift */,
 				7AF9028023A1A3DE00CD241B /* UImage+size.swift */,
 				7AF9027D23A1A3DE00CD241B /* UIView+cornerRadius.swift */,
+				3BC544BC23A281BC0071E78E /* UIColor+hex.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -281,7 +358,7 @@
 				TargetAttributes = {
 					7A1535642384A046003FF22E = {
 						CreatedOnToolsVersion = 11.2.1;
-						LastSwiftMigration = 1130;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -308,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1EDCA423A2C0EF00216DC0 /* Main.storyboard in Resources */,
 				7A2E9B6A23A19DCB004A449B /* Login.storyboard in Resources */,
 				7A2E9B6B23A19DCB004A449B /* Order.storyboard in Resources */,
 				7A2E9B6C23A19DCB004A449B /* Scans.storyboard in Resources */,
@@ -368,36 +446,50 @@
 			files = (
 				7AF9029623A1A4B700CD241B /* OGOrder+SubmissionHelpers.swift in Sources */,
 				7AF9029323A1A4B700CD241B /* OGClinic+Forms.swift in Sources */,
+				3BC544A923A2757E0071E78E /* Notifications.swift in Sources */,
+				3B205B3C23A2884E0092F859 /* String+fileName.swift in Sources */,
 				7AF9029823A1A4B700CD241B /* OGPatient+Order.swift in Sources */,
+				3BC544B423A2774A0071E78E /* PatientEditViewController.swift in Sources */,
 				7A2E9B6523A19DB5004A449B /* OrderTabBarController.swift in Sources */,
 				7AF9028223A1A3DE00CD241B /* Enum_String+localized.swift in Sources */,
+				3BC544A723A274540071E78E /* FormLoadable.swift in Sources */,
 				7A2E9B7023A19E48004A449B /* ShortOrderInfoViewController.swift in Sources */,
+				3BC544B623A277B90071E78E /* OrderHistoryViewController.swift in Sources */,
 				7AA12012238F1F3B006AF420 /* OGPractitioner+ListItem.swift in Sources */,
 				7AF9029123A1A4B700CD241B /* OGClinic+ListItem.swift in Sources */,
 				7A2E9B7623A19F86004A449B /* AuthenticationManager.swift in Sources */,
 				7AA12010238F1F36006AF420 /* OGOrder.swift in Sources */,
 				7AF9028123A1A3DE00CD241B /* String+localize.swift in Sources */,
+				3BC544B023A2774A0071E78E /* ClinicDetailViewController.swift in Sources */,
 				7AA1200C238F1F2A006AF420 /* OGDatabaseManager.swift in Sources */,
 				7AA1200E238F1F31006AF420 /* OGClinic.swift in Sources */,
 				7AF9028323A1A3DE00CD241B /* UIView+cornerRadius.swift in Sources */,
+				3BC544B223A2774A0071E78E /* ClinicNewEditViewController.swift in Sources */,
 				7AF9028823A1A44D00CD241B /* DatePopoverViewController.swift in Sources */,
+				3B205B3E23A28EBB0092F859 /* OrderSubmissionManager.swift in Sources */,
 				7A2E9B7823A1A183004A449B /* PatientsMasterViewController.swift in Sources */,
+				3BC544BD23A281BC0071E78E /* UIColor+hex.swift in Sources */,
 				7A20794F238B640D009447BB /* LoginViewController.swift in Sources */,
+				3BC544BB23A27DA80071E78E /* PractitionerViewEditViewController.swift in Sources */,
 				7AF9029523A1A4B700CD241B /* OGOrder+Assets.swift in Sources */,
 				7AF9028423A1A3DE00CD241B /* UIAlertController+OKCancel.swift in Sources */,
+				3B1EDCA223A2BD1A00216DC0 /* Constants.swift in Sources */,
 				7AA12011238F1F38006AF420 /* OGAsset.swift in Sources */,
 				7A1535692384A046003FF22E /* AppDelegate.swift in Sources */,
+				3BC544C123A2850A0071E78E /* DateFormattingManager.swift in Sources */,
 				7A2E9B7323A19E55004A449B /* OrderScansViewController.swift in Sources */,
 				7AA1200F238F1F33006AF420 /* OGPatient.swift in Sources */,
 				7A207984238B64A2009447BB /* SimpleListViewController.swift in Sources */,
 				7AF9029423A1A4B700CD241B /* OGPractitioner+Forms.swift in Sources */,
 				7AF9028523A1A3DE00CD241B /* Date+format.swift in Sources */,
+				3BC544B323A2774A0071E78E /* PatientNewViewController.swift in Sources */,
 				7A15356B2384A046003FF22E /* SceneDelegate.swift in Sources */,
 				7AA1200D238F1F2F006AF420 /* OGPractitioner.swift in Sources */,
 				7AF9028623A1A3DE00CD241B /* UImage+size.swift in Sources */,
 				7AF9029223A1A4B700CD241B /* OGAsset+Data.swift in Sources */,
 				7AF9029723A1A4B700CD241B /* OGPatient+Forms.swift in Sources */,
 				7AA1200B238F1D6F006AF420 /* OGConvertable.swift in Sources */,
+				3BC544BF23A285040071E78E /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,7 +557,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -519,7 +611,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -538,6 +630,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YE3HDA3J65;
 				INFOPLIST_FILE = CB_DB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,6 +652,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YE3HDA3J65;
 				INFOPLIST_FILE = CB_DB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

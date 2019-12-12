@@ -37,7 +37,7 @@ extension OGOrder {
             orderDict["numberOfDaysToWait"] = self.numberOfDaysToWait
             orderDict["numberOfOrdersToWait"] = self.numberOfOrdersToWait;
         case ShippingPrefereceType.FLEXIBLE.rawValue:
-            orderDict["preferredShipDate"] = DateFormattingManager.sharedManager.estDateTimeFormatter.string(from: self.preferredShipDate ?? Date())
+            orderDict["preferredShipDate"] = self.preferredShipDate ?? ""
         case ShippingPrefereceType.RUSH.rawValue:
             orderDict["rushDays"] = "\(self.rushDays)"
         default: break
@@ -63,7 +63,7 @@ extension OGOrder {
         let patientData: Dictionary<String,Any?> = [
             "firstName": patient?.firstName ?? "",
             "lastName": patient?.lastName ?? "",
-            "dateOfBirth": DateFormattingManager.sharedManager.iso8601LocalDateFormatter.string(from: patient?.dateOfBirth ?? Date()),
+            "dateOfBirth": DateFormattingManager.sharedManager.iso8601LocalDateFormatter?.string(from: Date(timeIntervalSince1970: patient?.dateOfBirth ?? 0)),
             "weight": patient?.weight ?? 0,
             "weightUnit": patient?.weightUnit ?? "lbs",
             "gender": patient?.gender ?? "",
@@ -85,7 +85,7 @@ extension OGOrder {
 //        CLSLogv("Patient: %@", getVaList([patient.debugDescription]))
 //        CLSLogv("Submission dict: %@", getVaList([returnDict]))
 
-        let refinedData = returnDict.withNilValuesRemoved
+        let refinedData = returnDict//.withNilValuesRemoved
         return refinedData
     }
     

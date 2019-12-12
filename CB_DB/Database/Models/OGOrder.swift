@@ -40,15 +40,15 @@ class OGOrder: NSObject, OGConvertable {
     var entity: String = "\(OGOrder.self)"
 
     // entity
-    var receivedDate: Date = Date()
-    var submittedAt: Date?
+    var receivedDate: String = Date().iso8601DateTime()
+    var submittedAt: String? // ISO date
     var notes: String = ""
     
     var shippingPreferenceType: String = ""
     var deliveryPreferenceType: String = ""
     var numberOfDaysToWait: Int = 0
     var numberOfOrdersToWait: Int = 0
-    var preferredShipDate: Date?
+    var preferredShipDate: String? // ISO date
     var rushDays: Int = 0
     var withShoes: Bool = false
     

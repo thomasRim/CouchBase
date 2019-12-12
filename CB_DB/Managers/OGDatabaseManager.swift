@@ -49,9 +49,9 @@ class OGDatabaseManager: NSObject {
                     from: CBLQueryDataSource.database(OGDatabaseManager.shared.database),
                     where: CBLQueryExpression.property("entity")
                         .equal(to: CBLQueryExpression.string(OGClinic().entity))
-                        .andExpression(CBLQueryExpression.property("paractitionerId")
-                            .equal(to: CBLQueryExpression.string(practitioner.id))),
-                    orderBy: [CBLQueryOrdering.property("name").ascending()])
+//                        .andExpression(CBLQueryExpression.property("practitionerId")
+//                            .equal(to: CBLQueryExpression.string(practitioner.id)))
+                , orderBy: [CBLQueryOrdering.property("name").ascending()])
 
         let result = executeQuery(query, forType: OGClinic.self)
         return result.0
@@ -102,16 +102,21 @@ class OGDatabaseManager: NSObject {
         return result.0.first
     }
 
-    static func allOrders(for patient:OGPatient?) -> [OGOrder] {
+    static func allOrders(for patient:OGPatient?, onlySubmitted:Bool = true) -> [OGOrder] {
         guard let patient = patient else { return [] }
 
+        var whereExpression:CBLQueryExpression = CBLQueryExpression.property("entity")
+            .equal(to: CBLQueryExpression.string(OGOrder().entity))
+            .andExpression(CBLQueryExpression.property("patientId")
+                .equal(to: CBLQueryExpression.string(patient.id)))
+        if (onlySubmitted) {
+            whereExpression = whereExpression.andExpression(CBLQueryExpression.property("submittedAt").notNullOrMissing())
+        }
+        
         let query = CBLQueryBuilder
             .select([CBLQuerySelectResult.all()],
                     from: CBLQueryDataSource.database(OGDatabaseManager.shared.database),
-                    where: CBLQueryExpression.property("entity")
-                        .equal(to: CBLQueryExpression.string(OGOrder().entity))
-                        .andExpression(CBLQueryExpression.property("patientId")
-                            .equal(to: CBLQueryExpression.string(patient.id))))
+                    where: whereExpression)
 
         let result = executeQuery(query, forType: OGOrder.self)
         return result.0

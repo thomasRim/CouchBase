@@ -30,15 +30,7 @@ extension OGConvertable {
 
         for child in mirr.children {
             if let key = child.label as String? {
-                if let value = child.value as? String {
-                    doc.setString(value, forKey: key)
-                } else if let value = child.value as? Bool {
-                    doc.setBoolean(value, forKey: key)
-                } else if let value = child.value as? Int {
-                    doc.setInteger(value, forKey: key)
-                } else if let value = child.value as? [Any] {
-                    doc.setArray( CBLMutableArray(data: value), forKey: key)
-                }
+                doc.setValue(child.value, forKey: key)
             }
         }
         return doc

@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import SVProgressHUD
 
 class ShortOrderInfoViewController: UIViewController {
 
@@ -66,7 +67,7 @@ class ShortOrderInfoViewController: UIViewController {
         super.viewDidLoad()
         
         self.receiverNotes = UITextView(frame: receiverNotesBase?.bounds ?? .zero)
-        self.receiverNotes?.backgroundColor = UIColor(hexString: "#EEEEEF")
+        self.receiverNotes?.backgroundColor = UIColor(with: "#EEEEEF")
         self.receiverNotes?.delegate = self
         if let notes = self.receiverNotes {
             self.receiverNotesBase?.addSubview(notes)
@@ -104,7 +105,7 @@ class ShortOrderInfoViewController: UIViewController {
                 date = sender.title(for: .normal)?.dateWithFormat(DateFormat.EEEEMMMMddyyyy.rawValue)
                 vc.onChangeDate = { (date) in
                     sender.setTitle((date ?? Date()).stringWithFormat(DateFormat.EEEEMMMMddyyyy), for: .normal)
-                    AuthenticationManager.currentPatient?.activeOrder().receivedDate = date ?? Date()
+                    AuthenticationManager.currentPatient?.activeOrder().receivedDate = date?.iso8601DateTime() ?? ""
                 }
                 dateVC = vc
             }
@@ -132,7 +133,7 @@ class ShortOrderInfoViewController: UIViewController {
 
                 vc.onChangeDate = { (date) in
                     sender.setTitle((date ?? normalDefaultDate).stringWithFormat(DateFormat.EEEEMMMMddyyyy), for: .normal)
-                    AuthenticationManager.currentPatient?.activeOrder().preferredShipDate = date ?? normalDefaultDate
+                    AuthenticationManager.currentPatient?.activeOrder().preferredShipDate = date?.iso8601DateTime() ?? ""
                 }
                 dateVC = vc
             }
@@ -185,14 +186,14 @@ class ShortOrderInfoViewController: UIViewController {
         case 1:
             let selected = toggleWithShoesBox?.backgroundColor == Toggle.selected.color
 
-            AuthenticationManager.currentPatient?.activeOrder().withShoesValue = !selected
+            AuthenticationManager.currentPatient?.activeOrder().withShoes = !selected
 
             if selected {
                 toggleWithShoesBox?.backgroundColor = Toggle.unselected.color
             } else {
                 toggleWithShoesBox?.backgroundColor = Toggle.selected.color
             }
-            NSManagedObjectContext.mr_default().mr_saveToPersistentStoreAndWait()
+            OGDatabaseManager.save(AuthenticationManager.currentPatient?.activeOrder())
 
         default: break
         }
@@ -217,13 +218,13 @@ class ShortOrderInfoViewController: UIViewController {
         let order = AuthenticationManager.currentPatient?.activeOrder()
         
         // received
-        if let date = order?.receivedDate {
+        if let dateString = order?.receivedDate , let date = dateString.dateWithFormat(DateFormat.iso8601.rawValue) {
             orderReceivedDateBtn?.setTitle(date.stringWithFormat(DateFormat.EEEEMMMMddyyyy), for: .normal)
         } else {
             let dateString = Date().stringWithFormat(DateFormat.EEEEMMMMddyyyy)
             orderReceivedDateBtn?.setTitle(dateString, for: .normal)
-            order?.receivedDate = Date()
-            NSManagedObjectContext.mr_default().mr_saveToPersistentStoreAndWait()
+            order?.receivedDate = Date().stringWithFormat(DateFormat.iso8601)
+            OGDatabaseManager.save(order)
         }
         
         // ship type
@@ -253,19 +254,19 @@ class ShortOrderInfoViewController: UIViewController {
         }
 
         // days to wait
-        let days = order?.numberOfDaysToWait?.intValue ?? 0
+        let days = order?.numberOfDaysToWait ?? 0
         if days > 0 {
             daysNumberBtn?.setTitle("\(days)", for: .normal)
         }
         
         // orders to wait
-        let orders = order?.numberOfOrdersToWait?.intValue ?? 0
+        let orders = order?.numberOfOrdersToWait ?? 0
         if orders > 0 {
             ordersNumberBtn?.setTitle("\(orders)", for: .normal)
         }
         
         // ship date
-        if let date = order?.preferredShipDate {
+        if let dateString = order?.preferredShipDate, let date = dateString.dateWithFormat(DateFormat.iso8601) {
             shipDateBtn?.setTitle(date.stringWithFormat(DateFormat.EEEEMMMMddyyyy), for: .normal)
         } else {
             let normalDefaultDate = Date(timeIntervalSince1970: (Date().timeIntervalSince1970 + 24*60*60*5) )
@@ -276,7 +277,7 @@ class ShortOrderInfoViewController: UIViewController {
         self.receiverNotes?.text = order?.notes
 
         // toggle with shoes
-        toggleWithShoesBox?.backgroundColor = (order?.withShoesValue ?? false) ? Toggle.selected.color : Toggle.unselected.color
+        toggleWithShoesBox?.backgroundColor = (order?.withShoes ?? false) ? Toggle.selected.color : Toggle.unselected.color
     }
 
     func startOrderSubmissionPrompts() {
@@ -322,7 +323,7 @@ extension ShortOrderInfoViewController {
 
     @objc func orderSubmissionProgress(_ notification: Notification) {
         DispatchQueue.main.async {
-            let progress = ((notification.userInfo?[kOrderSubmissionProgressPercentageKey] as AnyObject).floatValue)
+            let progress = ((notification.userInfo?[OrderSubmissionProgressPercentageKey] as AnyObject).floatValue)
             SVProgressHUD.showProgress(progress!,
                                        status: "OUploadingFiles".localized())
         }
@@ -361,11 +362,11 @@ extension ShortOrderInfoViewController: SimpleListViewControllerDelegate {
         case 4:
             daysNumberBtn?.setTitle(item.cellDisplayText, for: .normal)
             let num = (item.cellDisplayText as NSString).integerValue
-            order?.numberOfDaysToWait = num as NSNumber
+            order?.numberOfDaysToWait = num
         case 5:
             ordersNumberBtn?.setTitle(item.cellDisplayText, for: .normal)
             let num = (item.cellDisplayText as NSString).integerValue
-            order?.numberOfOrdersToWait = num as NSNumber
+            order?.numberOfOrdersToWait = num
         case 2:
             shippingPreferenceBtn?.setTitle(item.cellDisplayText, for: .normal)
             order?.shippingPreferenceType = ShippingPrefereceType.allCases[index].rawValue
@@ -385,7 +386,7 @@ extension ShortOrderInfoViewController: SimpleListViewControllerDelegate {
         default:break
         }
 
-        NSManagedObjectContext.mr_default().mr_saveToPersistentStoreAndWait()
+        OGDatabaseManager.save(order)
 
         controller.dismiss(animated: false)
     }

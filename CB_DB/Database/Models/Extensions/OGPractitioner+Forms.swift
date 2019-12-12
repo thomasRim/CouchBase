@@ -38,7 +38,7 @@ extension OGPractitioner: FormLoadable {
         return formDescriptor
     }
     
-    func loadValuesFromForm(_ form: XLFormDescriptor, sectionName: String?) {
+    func loadValuesFromForm(_ form: XLFormDescriptor) {
         var row: XLFormRowDescriptor
         row = form.formRow(withTag: FormRowTags.Name.rawValue)!
         self.name = row.value as? String

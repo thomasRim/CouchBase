@@ -10,5 +10,5 @@ import Foundation
 import XLForm
 
 protocol FormLoadable {
-    mutating func loadValuesFromForm(_ form: XLFormDescriptor, sectionName: String?)
+    mutating func loadValuesFromForm(_ form: XLFormDescriptor)
 }

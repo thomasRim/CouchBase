@@ -24,6 +24,7 @@ enum DateFormat:String {
     case EEEMMMddyyyy = "EEE, MMM dd, yyyy"
     case EEEEMMMMddyyyy = "EEEE, MMMM dd, yyyy"
     case MMMMddyyyyAtHna = "MMMM dd, yyyy 'at' HH:mm a"
+    case iso8601 = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
 }
 
 extension Date {
@@ -40,6 +41,10 @@ extension Date {
 }
 
 extension String {
+    func dateWithFormat(_ format:DateFormat) -> Date? {
+        return self.dateWithFormat(format.rawValue)
+    }
+    
     func dateWithFormat(_ formatString:String) -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = formatString

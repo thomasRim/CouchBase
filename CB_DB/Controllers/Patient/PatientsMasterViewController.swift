@@ -19,7 +19,7 @@ class PatientsMasterViewController : UIViewController {
     @IBOutlet weak fileprivate var addNewPatientBtn: UIButton?
 
     // Vars
-    private var detailViewController: ClinicDetailViewController?
+//    private var detailViewController: ClinicDetailViewController?
     private var searchBar: UISearchBar?
     private var appDelegate: AppDelegate?
     private var inEditMode: Bool = false
@@ -182,7 +182,7 @@ extension PatientsMasterViewController: UITableViewDelegate, UITableViewDataSour
         return true
     }
 
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    internal func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let patient = patients[indexPath.row]
             let cancelAction = UIAlertAction(title: "CCancel".localized(), style: .cancel, handler: nil)
@@ -223,11 +223,10 @@ extension PatientsMasterViewController: UITableViewDelegate, UITableViewDataSour
     func configure(cell:UITableViewCell, at indexPath: IndexPath) {
         let patient = patients[indexPath.row]
         cell.textLabel?.text = patient.name()
-        if let order = patient.lastSubmittedOrder(), let submitDate = order.submittedAt {
+        if let order = patient.lastSubmittedOrder(), let dateString = order.submittedAt {
             let dateFormatter = DateFormatter()
             dateFormatter.dateStyle = .short
 
-            let dateString = dateFormatter.string(from: submitDate)
             cell.detailTextLabel?.text = "\("MLastOrder".localized()) \("MOrderOn".localized()) \(dateString)"
         } else {
             cell.detailTextLabel?.text = " "

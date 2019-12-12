@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+import SSZipArchive
 
 extension OGAsset {
  
@@ -65,14 +67,14 @@ extension OGAsset {
             return false
         }
         
-        let translatedModelData: Data?
-        do {
-            translatedModelData = ObjFileEditor.translateToAlignCenterObject(with: modelData)
-            try translatedModelData!.write(to: modelURL, options: NSData.WritingOptions.init(rawValue: 0))
-        } catch let error as NSError {
-            NSLog("Error writing translated asset model data to file: %@ %@", error, error.userInfo)
-            return false
-        }
+//        let translatedModelData: Data?
+//        do {
+//            translatedModelData = ObjFileEditor.translateToAlignCenterObject(with: modelData)
+//            try translatedModelData!.write(to: modelURL, options: NSData.WritingOptions.init(rawValue: 0))
+//        } catch let error as NSError {
+//            NSLog("Error writing translated asset model data to file: %@ %@", error, error.userInfo)
+//            return false
+//        }
 
         if !self.renameFilesWithBasename("Model", inUnzippedArchiveAtURL:unzippedArchiveURL) {
             NSLog("Error renaming files")

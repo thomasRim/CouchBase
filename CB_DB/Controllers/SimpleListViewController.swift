@@ -22,6 +22,7 @@ protocol SimpleListViewControllerDelegate {
 
 // Optionals
 extension SimpleListViewControllerDelegate {
+    func simpleListViewControllerDidSelectAddNew(_ controller: SimpleListViewController) {}
     func simpleListViewControllerDidClose(_ controller: SimpleListViewController) {}
 }
 

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SMB-4K-imi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SMB-4K-imi">
     <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +10,7 @@
         <!--Order-->
         <scene sceneID="MXD-g3-PkM">
             <objects>
-                <viewController storyboardIdentifier="OrderScansViewController" title="Order" automaticallyAdjustsScrollViewInsets="NO" id="SMB-4K-imi" customClass="OrderScansViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderScansViewController" title="Order" automaticallyAdjustsScrollViewInsets="NO" id="SMB-4K-imi" customClass="OrderScansViewController" customModule="CB_DB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UGC-um-26e"/>
                         <viewControllerLayoutGuide type="bottom" id="PjG-Ef-yV6"/>
@@ -169,7 +168,7 @@
                                         <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJE-zy-P0o" customClass="BatteryView" customModule="Scanner" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJE-zy-P0o" customClass="BatteryView" customModule="CB_DB" customModuleProvider="target">
                                         <rect key="frame" x="166.5" y="9.5" width="32" height="12"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -223,19 +222,10 @@
                     <connections>
                         <outlet property="collectionView" destination="H5Q-dP-QNT" id="Suw-Jd-YlC"/>
                         <outlet property="resetOrderButton" destination="IE8-af-jvJ" id="2ka-8z-OUN"/>
-                        <outlet property="sensorBatteryViewController" destination="3cv-kd-nrM" id="Djw-KM-m68"/>
                         <segue destination="6p9-Z9-QWO" kind="show" id="07z-p3-AtT"/>
                         <segue destination="mua-sv-Ruv" kind="show" id="4X9-Rr-0OW"/>
                     </connections>
                 </viewController>
-                <customObject id="3cv-kd-nrM" customClass="SensorBatteryViewController">
-                    <connections>
-                        <outlet property="batteryView" destination="TJE-zy-P0o" id="pUq-cm-tqG"/>
-                        <outlet property="leftLabel" destination="udL-tv-afS" id="5zx-fy-daK"/>
-                        <outlet property="rightLabel" destination="fJ2-Yf-7lU" id="yD7-vs-AFb"/>
-                        <outlet property="view" destination="GkU-af-PCI" id="hGY-2d-XHe"/>
-                    </connections>
-                </customObject>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftL-6F-cQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1981.6406249999998" y="1595.3125"/>
@@ -365,7 +355,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xu5-PG-n0M">
                                         <rect key="frame" x="0.0" y="0.0" width="704" height="621"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yca-Kf-VkZ" customClass="Insole3dView" customModule="Scanner" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yca-Kf-VkZ" customClass="Insole3dView" customModule="CB_DB" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="704" height="621"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>

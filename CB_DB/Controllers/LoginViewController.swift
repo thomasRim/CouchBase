@@ -51,9 +51,8 @@ class LoginViewController: UIViewController, SimpleListViewControllerDelegate {
         
     @IBAction func tappedPractitionerButton(_ sender: AnyObject) {
         let practitionerListViewController = SimpleListViewController()
-        practitionerListViewController.controllerId = ListControllerId.practitioner.rawValue
         practitionerListViewController.delegate = self
-        practitionerListViewController.items = OGDatabaseManager.allPractitioners() as! [SimpleListItem]
+        practitionerListViewController.items = OGDatabaseManager.allPractitioners() as [SimpleListItem]
         practitionerListViewController.modalPresentationStyle = UIModalPresentationStyle.popover
         practitionerListViewController.preferredContentSize = CGSize(width: 300, height: 400)
         
@@ -94,28 +93,16 @@ class LoginViewController: UIViewController, SimpleListViewControllerDelegate {
     // MARK: - SimpleListViewControllerDelegate
     
     func simpleListViewController(_ controller: SimpleListViewController, didSelectItem item: SimpleListItem) {
-        let id = ListControllerId(rawValue: controller.controllerId)
-        
-        switch id {
-        case .clinic: break
-        case .practitioner:
-            let practitioner = item as? OGPractitioner
-//            AuthenticationManager.currentPractitioner = practitioner
-//            self.practitionerButton.setTitle("Practitioner: \(practitioner?.name ?? "")", for: UIControlState())
-        default: break
+        if let practitioner = item as? OGPractitioner {
+            AuthenticationManager.currentPractitioner = practitioner
+            self.practitionerButton?.setTitle("Practitioner: \(practitioner.name ?? "")", for: .normal)
         }
-        
         self.dismiss(animated: true)
     }
     
     func simpleListViewControllerDidSelectAddNew(_ controller: SimpleListViewController) {
-        switch ListControllerId(rawValue: controller.controllerId) {
-        case .clinic: break
-        case .practitioner:
-            self.dismiss(animated: true) { () -> Void in
-                self.promptForNewPractitioner()
-            }
-        default: break
+        self.dismiss(animated: true) { () -> Void in
+            self.promptForNewPractitioner()
         }
     }
         
@@ -135,10 +122,10 @@ class LoginViewController: UIViewController, SimpleListViewControllerDelegate {
             let name = alertController.textFields![0].text?.trimmingCharacters(in: CharacterSet.whitespaces)
 
             if let name = name, name.count > 0 {
-                var practitioner = OGPractitioner()
+                let practitioner = OGPractitioner()
                 practitioner.name = name
-                OGDatabaseManager.save(practitioner.toDocument())
-//                AuthenticationManager.currentPractitioner = practitioner
+                OGDatabaseManager.save(practitioner)
+                AuthenticationManager.currentPractitioner = practitioner
                 self.practitionerButton?.setTitle("Practitioner: \(name)", for: UIControl.State.normal)
             } else {
                 self.promptForNewPractitioner()

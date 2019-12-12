@@ -7,24 +7,24 @@
 //
 
 import Foundation
-
+import UIKit
 
 extension UIAlertController {
     
-    static let defaultCancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel)
-    static let defaultOkAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel)
+    static let defaultCancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel)
+    static let defaultOkAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel)
     
-    convenience init(title: String?, message: String?, preferredStyle: UIAlertControllerStyle = .alert,
+    convenience init(title: String?, message: String?, preferredStyle: UIAlertController.Style = .alert,
         cancelLabel: String? = nil, cancelAlertHandler: ((UIAlertAction) -> Void)? = nil, okLabel: String? = nil, okAlertHandler: ((UIAlertAction) -> Void)? = nil)
     {
         self.init(title: title, message: message, preferredStyle: preferredStyle)
         
         if cancelLabel != nil {
-            self.addAction(UIAlertAction(title: cancelLabel, style: UIAlertActionStyle.cancel, handler: cancelAlertHandler))
+            self.addAction(UIAlertAction(title: cancelLabel, style: UIAlertAction.Style.cancel, handler: cancelAlertHandler))
         }
         
         if okLabel != nil {
-            self.addAction(UIAlertAction(title: okLabel, style: UIAlertActionStyle.default, handler: okAlertHandler))
+            self.addAction(UIAlertAction(title: okLabel, style: UIAlertAction.Style.default, handler: okAlertHandler))
         }
         
         if cancelLabel == nil && okLabel == nil {
@@ -35,7 +35,7 @@ extension UIAlertController {
 
 extension UIAlertController {
     
-    @objc static func showAlert(title: String? = nil, message: String? = nil, preferredStyle: UIAlertControllerStyle = .alert, actions:[UIAlertAction]? = nil, from:UIViewController? = nil) {
+    @objc static func showAlert(title: String? = nil, message: String? = nil, preferredStyle: UIAlertController.Style = .alert, actions:[UIAlertAction]? = nil, from:UIViewController? = nil) {
 
         let alert = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
         
@@ -52,7 +52,7 @@ extension UIAlertController {
     
     static func showCredentialAlert(title:String?, message:String?, inputFields:[UITextField]? = nil, actions:[UIAlertAction]? = nil, from:UIViewController? = nil) -> UIAlertController {
         
-        let alert = UIAlertController(title: title, message:  message, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: title, message:  message, preferredStyle: UIAlertController.Style.alert)
         
         if let textFields = inputFields {
             for var field in textFields {
