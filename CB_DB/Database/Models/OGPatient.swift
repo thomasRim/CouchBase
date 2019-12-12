@@ -18,7 +18,7 @@ class OGPatient: OGConvertable {
     // entity
     var firstName: String = ""
     var lastName: String = ""
-    var dateOfBirth: Double = Date().timeIntervalSince1970
+    var dateOfBirth: String = Date().stringWithFormat(.iso8601)
     var weight: Int = 0
     var weightUnit: String = "lbs"
     var gender: String = "other"

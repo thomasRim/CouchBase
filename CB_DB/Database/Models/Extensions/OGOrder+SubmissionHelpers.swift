@@ -63,7 +63,7 @@ extension OGOrder {
         let patientData: Dictionary<String,Any?> = [
             "firstName": patient?.firstName ?? "",
             "lastName": patient?.lastName ?? "",
-            "dateOfBirth": DateFormattingManager.sharedManager.iso8601LocalDateFormatter?.string(from: Date(timeIntervalSince1970: patient?.dateOfBirth ?? 0)),
+            "dateOfBirth": patient?.dateOfBirth.dateWithFormat(.iso8601) ?? "",
             "weight": patient?.weight ?? 0,
             "weightUnit": patient?.weightUnit ?? "lbs",
             "gender": patient?.gender ?? "",

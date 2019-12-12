@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RGj-kF-kKQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RGj-kF-kKQ">
     <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,8 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qzY-Mh-pOl">
-                                <rect key="frame" x="362" y="240.5" width="300" height="79"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="qzY-Mh-pOl">
+                                <rect key="frame" x="362" y="240" width="300" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="DnN-FI-jP3"/>
                                     <constraint firstAttribute="width" constant="300" id="iuV-Lh-3cb"/>
@@ -41,8 +41,8 @@
                                     <action selector="tappedLoginButton:" destination="RGj-kF-kKQ" eventType="touchUpInside" id="Li8-jP-HdW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Scanner v1.0 (100)  " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WU-k2-njy">
-                                <rect key="frame" x="452" y="575" width="127.5" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanner v1.0 (100)  " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WU-k2-njy">
+                                <rect key="frame" x="875.5" y="743" width="128.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -140,7 +140,7 @@
         <!--Simple List View Controller-->
         <scene sceneID="Q0w-W0-Qh3">
             <objects>
-                <viewController id="Ghu-tb-Ize" customClass="SimpleListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SimpleListVC" id="Ghu-tb-Ize" customClass="SimpleListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kJl-yj-3Ua"/>
                         <viewControllerLayoutGuide type="bottom" id="eg0-su-z1w"/>
@@ -149,8 +149,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ood-Kt-Q5n">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ood-Kt-Q5n">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
                                 <items>
                                     <navigationItem title="Switch Clinic" id="D4T-Fm-xa7">
                                         <barButtonItem key="leftBarButtonItem" title="Close" id="tS5-L0-CSI">
@@ -161,8 +161,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="FeJ-Oc-9xu">
-                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="FeJ-Oc-9xu">
+                                <rect key="frame" x="0.0" y="50" width="1024" height="718"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Ghu-tb-Ize" id="1UE-ET-siv"/>
@@ -192,6 +192,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="doc.circle" catalog="system" width="64" height="60"/>
+        <image name="logo" width="300" height="80"/>
     </resources>
 </document>

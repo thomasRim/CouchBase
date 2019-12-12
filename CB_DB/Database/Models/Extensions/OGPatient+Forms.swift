@@ -68,7 +68,7 @@ extension OGPatient: FormLoadable {
         row = form.formRow(withTag: FormRowTags.LastName.rawValue)!
         self.lastName = row.value as! String
         row = form.formRow(withTag: FormRowTags.DateOfBirth.rawValue)!
-        self.dateOfBirth = (row.value as! Date).timeIntervalSince1970
+        self.dateOfBirth = (row.value as! Date).stringWithFormat(.iso8601)
         row = form.formRow(withTag: FormRowTags.Weight.rawValue)!
         self.weight = Int(row.value as! NSNumber)
         row = form.formRow(withTag: FormRowTags.WeightUnit.rawValue)!
@@ -121,7 +121,7 @@ extension OGPatient: FormLoadable {
                                     title: NSLocalizedString("XLFDateOfBirth", comment: "DOB form label"))
         row.isRequired = true
         if patient != nil {
-            row.value = patient!.dateOfBirth as Double
+            row.value = patient!.dateOfBirth.dateWithFormat(.iso8601)
         } else {
             var defaultComponents = DateComponents()
             defaultComponents.year = 1990

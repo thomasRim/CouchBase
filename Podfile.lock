@@ -1,0 +1,74 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AWSCognito (2.11.1):
+    - AWSCore (= 2.11.1)
+  - AWSCore (2.11.1)
+  - AWSS3 (2.11.1):
+    - AWSCore (= 2.11.1)
+  - Calendar-iOS (0.13)
+  - CouchbaseLite (2.6.3)
+  - FontAwesomeKit (2.2.1):
+    - FontAwesomeKit/Core (= 2.2.1)
+    - FontAwesomeKit/FontAwesome (= 2.2.1)
+    - FontAwesomeKit/FoundationIcons (= 2.2.1)
+    - FontAwesomeKit/IonIcons (= 2.2.1)
+    - FontAwesomeKit/Material (= 2.2.1)
+    - FontAwesomeKit/Octicons (= 2.2.1)
+    - FontAwesomeKit/Zocial (= 2.2.1)
+  - FontAwesomeKit/Core (2.2.1)
+  - FontAwesomeKit/FontAwesome (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Material (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Octicons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.1):
+    - FontAwesomeKit/Core
+  - SSZipArchive (2.2.2)
+  - SVProgressHUD (2.2.5)
+  - XLForm (3.0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - AWSCognito (~> 2.11.0)
+  - AWSCore (~> 2.11.0)
+  - AWSS3 (~> 2.11.0)
+  - Calendar-iOS
+  - CouchbaseLite
+  - FontAwesomeKit
+  - SSZipArchive
+  - SVProgressHUD
+  - XLForm (= 3.0.2)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AWSCognito
+    - AWSCore
+    - AWSS3
+    - Calendar-iOS
+    - CouchbaseLite
+    - FontAwesomeKit
+    - SSZipArchive
+    - SVProgressHUD
+    - XLForm
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AWSCognito: cadd5d3ef3b24f8c26365eedfa0730fbc20c8117
+  AWSCore: 00093a1ff49b5d6ce5f1e4d83fe301486fc5034d
+  AWSS3: 738419b8039230423e4734556983a463466a9d7a
+  Calendar-iOS: a7bb0e6d2cee372e7e3de98d44d60ac7364be7f3
+  CouchbaseLite: 1ef850e6f80ad834e856298a53f0428af4b259ed
+  FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
+  SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  XLForm: 7817ce29f3f259186e837bb7309ac7e5b7e9b883
+
+PODFILE CHECKSUM: 2dd67214d6c334a005262431df510fcbdd6586f5
+
+COCOAPODS: 1.8.4

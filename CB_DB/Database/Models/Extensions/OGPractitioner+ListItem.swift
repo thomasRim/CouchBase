@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FontAwesomeKit
 
 extension OGPractitioner: SimpleListItem {
     
@@ -16,7 +17,7 @@ extension OGPractitioner: SimpleListItem {
     }
     
     var cellDisplayImage: UIImage {
-        get { return UIImage() }
+        get { return FAKIonIcons.medkitIcon(withSize: 64)?.image(with: CGSize(width: 64, height: 64)) ?? UIImage() }
     }
     
 }

@@ -1,0 +1,26 @@
+34:35: syntax error: Expected “then”, etc. but found “,”. (-2741)
+//--------------------------//
+// 2019-12-12 21:24:12 UTC
+//--------------------------//
+Project folder..
+/Users/vevdokimov/Projects/Personal/CouchBase/
+----------
+install pods
+----------
+Analyzing dependencies
+Downloading dependencies
+Installing AWSCognito (2.11.1)
+Installing AWSCore (2.11.1)
+Installing AWSS3 (2.11.1)
+Installing Alamofire (4.9.1)
+Installing Calendar-iOS (0.13)
+Installing CouchbaseLite (2.6.3)
+Installing FontAwesomeKit (2.2.1)
+Installing SSZipArchive (2.2.2)
+Installing SVProgressHUD (2.2.5)
+Installing XLForm (3.0.2)
+Generating Pods project
+Integrating client project
+
+[!] Please close any current Xcode sessions and use `CB_DB.xcworkspace` for this project from now on.
+Pod installation complete! There are 10 dependencies from the Podfile and 10 total pods installed.
