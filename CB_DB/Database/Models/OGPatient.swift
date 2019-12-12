@@ -7,17 +7,17 @@
 //
 
 import Foundation
-import CouchbaseLiteSwift
+import CouchbaseLite
 
-
-struct OGPatient: OGConvertable {
+class OGPatient: OGConvertable {
+    
     var id: String = UUID().uuidString
     var entity: String = "\(OGPatient.self)"
 
 
     // entity
-    var firstName: String?
-    var lastName: String?
+    var firstName: String = ""
+    var lastName: String = ""
     var dateOfBirth: Date = Date()
     var weight: Int = 0
     var weightUnit: String = "lbs"
@@ -28,9 +28,29 @@ struct OGPatient: OGConvertable {
 
     // relation
     var clinicId: String = ""
-    //orders
+    
+    func orders() -> [OGOrder] {
+        return OGDatabaseManager.allOrders(for: self)
+    }
 
     func clinic() -> OGClinic? {
         return OGDatabaseManager.clinic(for:self)
+    }
+
+    //MARK: - Other
+
+    func name() -> String {
+        let firstNameString: String = self.firstName
+        let lastNameString: String = self.lastName
+        return "\(lastNameString), \(firstNameString)"
+    }
+
+    func applyAction(_ action: OGConvertableAction) {
+        switch action {
+        case .saveUpdate:
+            OGDatabaseManager.save(self)
+        case .delete:
+            OGDatabaseManager.delete(self)
+        }
     }
 }

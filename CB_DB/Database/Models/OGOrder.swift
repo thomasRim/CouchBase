@@ -7,35 +7,68 @@
 //
 
 import Foundation
-import CouchbaseLiteSwift
+import CouchbaseLite
 
-struct OGOrder: OGConvertable {
+enum DeliveryPrefereceType: String, CaseIterable {
+    case SHIP
+    case PICK_UP_AT_LAB
+
+    static func titles() -> [String] {
+        return [ "Ship to Clinic",
+                 "Pick up from Lab"
+        ]
+    }
+}
+
+enum ShippingPrefereceType: String, CaseIterable {
+    case INDIVIDUALLY
+    case WAIT_FOR_ORDERS
+    case FLEXIBLE
+    case RUSH
+
+    static func titles() -> [String] {
+        return [ "Ship Individually",
+                 "Wait for X orders, max Y days",
+                 "Select Shipping Date"
+        ]
+    }
+}
+
+class OGOrder: NSObject, OGConvertable {
     // protocol
     var id: String = UUID().uuidString
     var entity: String = "\(OGOrder.self)"
 
     // entity
-    var orderReceivedDate: Date = Date()
-    var orderMustShipDate: Date?
-    var orderRush: String = RushValue.none.rawValue
+    var receivedDate: Date = Date()
     var submittedAt: Date?
     var notes: String = ""
-
+    
+    var shippingPreferenceType: String = ""
+    var deliveryPreferenceType: String = ""
+    var numberOfDaysToWait: Int = 0
+    var numberOfOrdersToWait: Int = 0
+    var preferredShipDate: Date?
+    var rushDays: Int = 0
+    var withShoes: Bool = false
+    
     // relation
     var patientId: String = ""
-    //assets
 
+    func assets() -> [OGAsset] {
+        return OGDatabaseManager.allAssets(for: self)
+    }
+    
     func patient() -> OGPatient? {
         return OGDatabaseManager.patient(for: self)
     }
-    
-    // other
-    enum RushValue: String, CaseIterable {
-        case none = "NONE"
-        case day1 = "1 Day"
-        case day2 = "2 Day"
-        case day3 = "3 Day"
-        case day4 = "4 Day"
-    }
 
+    func applyAction(_ action: OGConvertableAction) {
+        switch action {
+        case .saveUpdate:
+            OGDatabaseManager.save(self)
+        case .delete:
+            OGDatabaseManager.delete(self)
+        }
+    }
 }

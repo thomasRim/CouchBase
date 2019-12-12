@@ -12,8 +12,16 @@
 		7A1535722384A04D003FF22E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1535712384A04D003FF22E /* Assets.xcassets */; };
 		7A1535752384A04D003FF22E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1535732384A04D003FF22E /* LaunchScreen.storyboard */; };
 		7A20794F238B640D009447BB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A20794E238B640D009447BB /* LoginViewController.swift */; };
-		7A207951238B6430009447BB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A207950238B6430009447BB /* Login.storyboard */; };
 		7A207984238B64A2009447BB /* SimpleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A207983238B64A2009447BB /* SimpleListViewController.swift */; };
+		7A2E9B5D23A19D3A004A449B /* ShortOrderInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E9B5B23A19D3A004A449B /* ShortOrderInfo.storyboard */; };
+		7A2E9B6523A19DB5004A449B /* OrderTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E9B6323A19DB5004A449B /* OrderTabBarController.swift */; };
+		7A2E9B6A23A19DCB004A449B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E9B6723A19DCB004A449B /* Login.storyboard */; };
+		7A2E9B6B23A19DCB004A449B /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E9B6823A19DCB004A449B /* Order.storyboard */; };
+		7A2E9B6C23A19DCB004A449B /* Scans.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E9B6923A19DCB004A449B /* Scans.storyboard */; };
+		7A2E9B7023A19E48004A449B /* ShortOrderInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E9B6D23A19E47004A449B /* ShortOrderInfoViewController.swift */; };
+		7A2E9B7323A19E55004A449B /* OrderScansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E9B7223A19E55004A449B /* OrderScansViewController.swift */; };
+		7A2E9B7623A19F86004A449B /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E9B7523A19F86004A449B /* AuthenticationManager.swift */; };
+		7A2E9B7823A1A183004A449B /* PatientsMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E9B7723A1A183004A449B /* PatientsMasterViewController.swift */; };
 		7AA1200B238F1D6F006AF420 /* OGConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA12007238F1CC3006AF420 /* OGConvertable.swift */; };
 		7AA1200C238F1F2A006AF420 /* OGDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A207981238B646E009447BB /* OGDatabaseManager.swift */; };
 		7AA1200D238F1F2F006AF420 /* OGPractitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA12009238F1CC3006AF420 /* OGPractitioner.swift */; };
@@ -22,11 +30,27 @@
 		7AA12010238F1F36006AF420 /* OGOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA12005238F1CC3006AF420 /* OGOrder.swift */; };
 		7AA12011238F1F38006AF420 /* OGAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA12004238F1CC3006AF420 /* OGAsset.swift */; };
 		7AA12012238F1F3B006AF420 /* OGPractitioner+ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA1200A238F1D1C006AF420 /* OGPractitioner+ListItem.swift */; };
+		7AF9028123A1A3DE00CD241B /* String+localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9027B23A1A3DD00CD241B /* String+localize.swift */; };
+		7AF9028223A1A3DE00CD241B /* Enum_String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9027C23A1A3DE00CD241B /* Enum_String+localized.swift */; };
+		7AF9028323A1A3DE00CD241B /* UIView+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9027D23A1A3DE00CD241B /* UIView+cornerRadius.swift */; };
+		7AF9028423A1A3DE00CD241B /* UIAlertController+OKCancel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9027E23A1A3DE00CD241B /* UIAlertController+OKCancel.swift */; };
+		7AF9028523A1A3DE00CD241B /* Date+format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9027F23A1A3DE00CD241B /* Date+format.swift */; };
+		7AF9028623A1A3DE00CD241B /* UImage+size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9028023A1A3DE00CD241B /* UImage+size.swift */; };
+		7AF9028823A1A44D00CD241B /* DatePopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9028723A1A44D00CD241B /* DatePopoverViewController.swift */; };
+		7AF9029123A1A4B700CD241B /* OGClinic+ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9028923A1A4B600CD241B /* OGClinic+ListItem.swift */; };
+		7AF9029223A1A4B700CD241B /* OGAsset+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9028A23A1A4B600CD241B /* OGAsset+Data.swift */; };
+		7AF9029323A1A4B700CD241B /* OGClinic+Forms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9028B23A1A4B600CD241B /* OGClinic+Forms.swift */; };
+		7AF9029423A1A4B700CD241B /* OGPractitioner+Forms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9028C23A1A4B600CD241B /* OGPractitioner+Forms.swift */; };
+		7AF9029523A1A4B700CD241B /* OGOrder+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9028D23A1A4B600CD241B /* OGOrder+Assets.swift */; };
+		7AF9029623A1A4B700CD241B /* OGOrder+SubmissionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9028E23A1A4B700CD241B /* OGOrder+SubmissionHelpers.swift */; };
+		7AF9029723A1A4B700CD241B /* OGPatient+Forms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9028F23A1A4B700CD241B /* OGPatient+Forms.swift */; };
+		7AF9029823A1A4B700CD241B /* OGPatient+Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9029023A1A4B700CD241B /* OGPatient+Order.swift */; };
 		F0C85D0BB5879F2B139EE80E /* Pods_CB_DB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133D6A53C2AE5F283779AA1A /* Pods_CB_DB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		133D6A53C2AE5F283779AA1A /* Pods_CB_DB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CB_DB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44E42F9B3623D54543ACCF12 /* Pods-CB_DB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB_DB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CB_DB/Pods-CB_DB.debug.xcconfig"; sourceTree = "<group>"; };
 		686DAC9CABEEC3185F8381D2 /* Pods-CB_DB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB_DB.release.xcconfig"; path = "Target Support Files/Pods-CB_DB/Pods-CB_DB.release.xcconfig"; sourceTree = "<group>"; };
 		7A1535652384A046003FF22E /* CB_DB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CB_DB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1535682384A046003FF22E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,9 +59,17 @@
 		7A1535742384A04D003FF22E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A1535762384A04D003FF22E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A20794E238B640D009447BB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		7A207950238B6430009447BB /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		7A207981238B646E009447BB /* OGDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OGDatabaseManager.swift; sourceTree = "<group>"; };
 		7A207983238B64A2009447BB /* SimpleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleListViewController.swift; sourceTree = "<group>"; };
+		7A2E9B5B23A19D3A004A449B /* ShortOrderInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ShortOrderInfo.storyboard; path = CB_DB/Storyboard/ShortOrderInfo.storyboard; sourceTree = SOURCE_ROOT; };
+		7A2E9B6323A19DB5004A449B /* OrderTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTabBarController.swift; sourceTree = "<group>"; };
+		7A2E9B6723A19DCB004A449B /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		7A2E9B6823A19DCB004A449B /* Order.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
+		7A2E9B6923A19DCB004A449B /* Scans.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scans.storyboard; sourceTree = "<group>"; };
+		7A2E9B6D23A19E47004A449B /* ShortOrderInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortOrderInfoViewController.swift; sourceTree = "<group>"; };
+		7A2E9B7223A19E55004A449B /* OrderScansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScansViewController.swift; sourceTree = "<group>"; };
+		7A2E9B7523A19F86004A449B /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		7A2E9B7723A1A183004A449B /* PatientsMasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientsMasterViewController.swift; sourceTree = "<group>"; };
 		7AA12004238F1CC3006AF420 /* OGAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OGAsset.swift; sourceTree = "<group>"; };
 		7AA12005238F1CC3006AF420 /* OGOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OGOrder.swift; sourceTree = "<group>"; };
 		7AA12006238F1CC3006AF420 /* OGPatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OGPatient.swift; sourceTree = "<group>"; };
@@ -45,7 +77,23 @@
 		7AA12008238F1CC3006AF420 /* OGClinic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OGClinic.swift; sourceTree = "<group>"; };
 		7AA12009238F1CC3006AF420 /* OGPractitioner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OGPractitioner.swift; sourceTree = "<group>"; };
 		7AA1200A238F1D1C006AF420 /* OGPractitioner+ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OGPractitioner+ListItem.swift"; sourceTree = "<group>"; };
+		7AF9027B23A1A3DD00CD241B /* String+localize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+localize.swift"; sourceTree = "<group>"; };
+		7AF9027C23A1A3DE00CD241B /* Enum_String+localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Enum_String+localized.swift"; sourceTree = "<group>"; };
+		7AF9027D23A1A3DE00CD241B /* UIView+cornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+cornerRadius.swift"; sourceTree = "<group>"; };
+		7AF9027E23A1A3DE00CD241B /* UIAlertController+OKCancel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+OKCancel.swift"; sourceTree = "<group>"; };
+		7AF9027F23A1A3DE00CD241B /* Date+format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+format.swift"; sourceTree = "<group>"; };
+		7AF9028023A1A3DE00CD241B /* UImage+size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UImage+size.swift"; sourceTree = "<group>"; };
+		7AF9028723A1A44D00CD241B /* DatePopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePopoverViewController.swift; sourceTree = "<group>"; };
+		7AF9028923A1A4B600CD241B /* OGClinic+ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OGClinic+ListItem.swift"; sourceTree = "<group>"; };
+		7AF9028A23A1A4B600CD241B /* OGAsset+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OGAsset+Data.swift"; sourceTree = "<group>"; };
+		7AF9028B23A1A4B600CD241B /* OGClinic+Forms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OGClinic+Forms.swift"; sourceTree = "<group>"; };
+		7AF9028C23A1A4B600CD241B /* OGPractitioner+Forms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OGPractitioner+Forms.swift"; sourceTree = "<group>"; };
+		7AF9028D23A1A4B600CD241B /* OGOrder+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OGOrder+Assets.swift"; sourceTree = "<group>"; };
+		7AF9028E23A1A4B700CD241B /* OGOrder+SubmissionHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OGOrder+SubmissionHelpers.swift"; sourceTree = "<group>"; };
+		7AF9028F23A1A4B700CD241B /* OGPatient+Forms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OGPatient+Forms.swift"; sourceTree = "<group>"; };
+		7AF9029023A1A4B700CD241B /* OGPatient+Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OGPatient+Order.swift"; sourceTree = "<group>"; };
 		85B4226B395ECA2F98045D4C /* Pods-CB_DB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB_DB.debug.xcconfig"; path = "Target Support Files/Pods-CB_DB/Pods-CB_DB.debug.xcconfig"; sourceTree = "<group>"; };
+		987EB9D26E695A9BC22B25B5 /* Pods-CB_DB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB_DB.release.xcconfig"; path = "Pods/Target Support Files/Pods-CB_DB/Pods-CB_DB.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,23 +137,57 @@
 		7A1535672384A046003FF22E /* CB_DB */ = {
 			isa = PBXGroup;
 			children = (
-				7AA11FFF238F1C43006AF420 /* Database */,
 				7A1535682384A046003FF22E /* AppDelegate.swift */,
 				7A15356A2384A046003FF22E /* SceneDelegate.swift */,
-				7A20794E238B640D009447BB /* LoginViewController.swift */,
+				7A2E9B5A23A19D05004A449B /* Controllers */,
+				7A2E9B5923A19CF0004A449B /* Storyboard */,
+				7AA11FFF238F1C43006AF420 /* Database */,
+				7A2E9B7423A19F35004A449B /* Managers */,
+				7AF9027A23A1A35C00CD241B /* Utils */,
 				7A1535712384A04D003FF22E /* Assets.xcassets */,
-				7A207983238B64A2009447BB /* SimpleListViewController.swift */,
 				7A1535732384A04D003FF22E /* LaunchScreen.storyboard */,
-				7A207950238B6430009447BB /* Login.storyboard */,
 				7A1535762384A04D003FF22E /* Info.plist */,
 			);
 			path = CB_DB;
 			sourceTree = "<group>";
 		};
+		7A2E9B5923A19CF0004A449B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7A2E9B6723A19DCB004A449B /* Login.storyboard */,
+				7A2E9B6823A19DCB004A449B /* Order.storyboard */,
+				7A2E9B6923A19DCB004A449B /* Scans.storyboard */,
+				7A2E9B5B23A19D3A004A449B /* ShortOrderInfo.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7A2E9B5A23A19D05004A449B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7AF9028723A1A44D00CD241B /* DatePopoverViewController.swift */,
+				7A2E9B7223A19E55004A449B /* OrderScansViewController.swift */,
+				7A2E9B6D23A19E47004A449B /* ShortOrderInfoViewController.swift */,
+				7A2E9B6323A19DB5004A449B /* OrderTabBarController.swift */,
+				7A2E9B7723A1A183004A449B /* PatientsMasterViewController.swift */,
+				7A207983238B64A2009447BB /* SimpleListViewController.swift */,
+				7A20794E238B640D009447BB /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A2E9B7423A19F35004A449B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7A2E9B7523A19F86004A449B /* AuthenticationManager.swift */,
+				7A207981238B646E009447BB /* OGDatabaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		7AA11FFF238F1C43006AF420 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				7A207981238B646E009447BB /* OGDatabaseManager.swift */,
 				7AA12007238F1CC3006AF420 /* OGConvertable.swift */,
 				7AA12002238F1CB3006AF420 /* Models */,
 			);
@@ -128,9 +210,30 @@
 		7AA12003238F1CC3006AF420 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7AF9028A23A1A4B600CD241B /* OGAsset+Data.swift */,
+				7AF9028B23A1A4B600CD241B /* OGClinic+Forms.swift */,
+				7AF9028923A1A4B600CD241B /* OGClinic+ListItem.swift */,
+				7AF9028D23A1A4B600CD241B /* OGOrder+Assets.swift */,
+				7AF9028E23A1A4B700CD241B /* OGOrder+SubmissionHelpers.swift */,
+				7AF9028F23A1A4B700CD241B /* OGPatient+Forms.swift */,
+				7AF9029023A1A4B700CD241B /* OGPatient+Order.swift */,
+				7AF9028C23A1A4B600CD241B /* OGPractitioner+Forms.swift */,
 				7AA1200A238F1D1C006AF420 /* OGPractitioner+ListItem.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7AF9027A23A1A35C00CD241B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7AF9027F23A1A3DE00CD241B /* Date+format.swift */,
+				7AF9027C23A1A3DE00CD241B /* Enum_String+localized.swift */,
+				7AF9027B23A1A3DD00CD241B /* String+localize.swift */,
+				7AF9027E23A1A3DE00CD241B /* UIAlertController+OKCancel.swift */,
+				7AF9028023A1A3DE00CD241B /* UImage+size.swift */,
+				7AF9027D23A1A3DE00CD241B /* UIView+cornerRadius.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		8704BFDAC7AC7EE5687E665B /* Pods */ = {
@@ -138,6 +241,8 @@
 			children = (
 				85B4226B395ECA2F98045D4C /* Pods-CB_DB.debug.xcconfig */,
 				686DAC9CABEEC3185F8381D2 /* Pods-CB_DB.release.xcconfig */,
+				44E42F9B3623D54543ACCF12 /* Pods-CB_DB.debug.xcconfig */,
+				987EB9D26E695A9BC22B25B5 /* Pods-CB_DB.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -176,6 +281,7 @@
 				TargetAttributes = {
 					7A1535642384A046003FF22E = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -202,7 +308,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A207951238B6430009447BB /* Login.storyboard in Resources */,
+				7A2E9B6A23A19DCB004A449B /* Login.storyboard in Resources */,
+				7A2E9B6B23A19DCB004A449B /* Order.storyboard in Resources */,
+				7A2E9B6C23A19DCB004A449B /* Scans.storyboard in Resources */,
+				7A2E9B5D23A19D3A004A449B /* ShortOrderInfo.storyboard in Resources */,
 				7A1535752384A04D003FF22E /* LaunchScreen.storyboard in Resources */,
 				7A1535722384A04D003FF22E /* Assets.xcassets in Resources */,
 			);
@@ -257,17 +366,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF9029623A1A4B700CD241B /* OGOrder+SubmissionHelpers.swift in Sources */,
+				7AF9029323A1A4B700CD241B /* OGClinic+Forms.swift in Sources */,
+				7AF9029823A1A4B700CD241B /* OGPatient+Order.swift in Sources */,
+				7A2E9B6523A19DB5004A449B /* OrderTabBarController.swift in Sources */,
+				7AF9028223A1A3DE00CD241B /* Enum_String+localized.swift in Sources */,
+				7A2E9B7023A19E48004A449B /* ShortOrderInfoViewController.swift in Sources */,
 				7AA12012238F1F3B006AF420 /* OGPractitioner+ListItem.swift in Sources */,
+				7AF9029123A1A4B700CD241B /* OGClinic+ListItem.swift in Sources */,
+				7A2E9B7623A19F86004A449B /* AuthenticationManager.swift in Sources */,
 				7AA12010238F1F36006AF420 /* OGOrder.swift in Sources */,
+				7AF9028123A1A3DE00CD241B /* String+localize.swift in Sources */,
 				7AA1200C238F1F2A006AF420 /* OGDatabaseManager.swift in Sources */,
 				7AA1200E238F1F31006AF420 /* OGClinic.swift in Sources */,
+				7AF9028323A1A3DE00CD241B /* UIView+cornerRadius.swift in Sources */,
+				7AF9028823A1A44D00CD241B /* DatePopoverViewController.swift in Sources */,
+				7A2E9B7823A1A183004A449B /* PatientsMasterViewController.swift in Sources */,
 				7A20794F238B640D009447BB /* LoginViewController.swift in Sources */,
+				7AF9029523A1A4B700CD241B /* OGOrder+Assets.swift in Sources */,
+				7AF9028423A1A3DE00CD241B /* UIAlertController+OKCancel.swift in Sources */,
 				7AA12011238F1F38006AF420 /* OGAsset.swift in Sources */,
 				7A1535692384A046003FF22E /* AppDelegate.swift in Sources */,
+				7A2E9B7323A19E55004A449B /* OrderScansViewController.swift in Sources */,
 				7AA1200F238F1F33006AF420 /* OGPatient.swift in Sources */,
 				7A207984238B64A2009447BB /* SimpleListViewController.swift in Sources */,
+				7AF9029423A1A4B700CD241B /* OGPractitioner+Forms.swift in Sources */,
+				7AF9028523A1A3DE00CD241B /* Date+format.swift in Sources */,
 				7A15356B2384A046003FF22E /* SceneDelegate.swift in Sources */,
 				7AA1200D238F1F2F006AF420 /* OGPractitioner.swift in Sources */,
+				7AF9028623A1A3DE00CD241B /* UImage+size.swift in Sources */,
+				7AF9029223A1A4B700CD241B /* OGAsset+Data.swift in Sources */,
+				7AF9029723A1A4B700CD241B /* OGPatient+Forms.swift in Sources */,
 				7AA1200B238F1D6F006AF420 /* OGConvertable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -390,7 +519,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -405,6 +534,7 @@
 			baseConfigurationReference = 85B4226B395ECA2F98045D4C /* Pods-CB_DB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YE3HDA3J65;
 				INFOPLIST_FILE = CB_DB/Info.plist;
@@ -414,8 +544,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rootHome.CB-DB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -424,6 +555,7 @@
 			baseConfigurationReference = 686DAC9CABEEC3185F8381D2 /* Pods-CB_DB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YE3HDA3J65;
 				INFOPLIST_FILE = CB_DB/Info.plist;
@@ -434,7 +566,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "rootHome.CB-DB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

@@ -11,22 +11,12 @@ import UIKit
 
 extension OGPractitioner: SimpleListItem {
     
-    struct Constants {
-        static let iconImage: UIImage = UIImage()
-    }
-    
-    // MARK: - SimpleListItem
-    
     var cellDisplayText: String {
-        get {
-            return self.name ?? ""
-        }
+        get { return self.name ?? "" }
     }
     
     var cellDisplayImage: UIImage {
-        get {
-            return Constants.iconImage
-        }
+        get { return UIImage() }
     }
     
 }

@@ -13,20 +13,13 @@ class LoginViewController: UIViewController, SimpleListViewControllerDelegate {
     func simpleListViewControllerDidClose(_ controller: SimpleListViewController) {
         
     }
-
     
     enum SyncType {
         case upload
         case download
     }
-    enum ListControllerId: String {
-        case clinic = "clinicList"
-        case practitioner = "practitionerList"
-    }
         
-//    @IBOutlet var sensorBatteryViewController: SensorBatteryViewController!
-    
-//    @IBOutlet var clinicButton: UIButton!
+
     @IBOutlet weak var practitionerButton: UIButton?
     @IBOutlet weak var loginButton: UIButton?
     @IBOutlet weak var versionLabel: UILabel?
@@ -34,8 +27,7 @@ class LoginViewController: UIViewController, SimpleListViewControllerDelegate {
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
-//        self.registerNotifications()
-        
+
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true)
         print(path)
     }
@@ -47,10 +39,6 @@ class LoginViewController: UIViewController, SimpleListViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        self.addChildViewController(self.sensorBatteryViewController)
-        
-
     }
     
 
@@ -77,12 +65,12 @@ class LoginViewController: UIViewController, SimpleListViewControllerDelegate {
     }
     
     @IBAction func tappedLoginButton(_ sender: AnyObject) {
-//        if AuthenticationManager.currentPractitioner != nil {
-//            AuthenticationManager.authenticate()
-//        } else {
-//            let alertController = UIAlertController(title: "LSelectClinicPractitionerAlertTitle".localized(), message: "LSelectPractitionerAlertMessage".localized(), cancelLabel: "COk".localized())
-//            self.present(alertController, animated: true, completion: nil)
-//        }
+        if AuthenticationManager.currentPractitioner != nil {
+            AuthenticationManager.authenticate()
+        } else {
+            let alertController = UIAlertController(title: "LSelectClinicPractitionerAlertTitle".localized(), message: "LSelectPractitionerAlertMessage".localized(), cancelLabel: "COk".localized())
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     
     // TEST HTTP METHOD

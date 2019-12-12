@@ -20,7 +20,11 @@ protocol SimpleListViewControllerDelegate {
     func simpleListViewControllerDidClose(_ controller: SimpleListViewController)
 }
 
-@objc(SimpleListViewController)
+// Optionals
+extension SimpleListViewControllerDelegate {
+    func simpleListViewControllerDidClose(_ controller: SimpleListViewController) {}
+}
+
 class SimpleListViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     struct Constants {

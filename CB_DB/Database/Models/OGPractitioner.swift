@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import CouchbaseLiteSwift
+import CouchbaseLite
 
-struct OGPractitioner: OGConvertable {
+class OGPractitioner: OGConvertable {
 
     var id: String = UUID().uuidString
     var entity: String = "\(OGPractitioner.self)"
@@ -20,4 +20,16 @@ struct OGPractitioner: OGConvertable {
     // relation
     //clinics
 
+    func clinics() -> [OGClinic] {
+        return OGDatabaseManager.allClinics(for: self)
+    }
+
+    func applyAction(_ action: OGConvertableAction) {
+        switch action {
+        case .saveUpdate:
+            OGDatabaseManager.save(self)
+        case .delete:
+            OGDatabaseManager.delete(self)
+        }
+    }
 }

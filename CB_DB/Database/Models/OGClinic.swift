@@ -7,15 +7,15 @@
 //
 
 import Foundation
-import CouchbaseLiteSwift
+import CouchbaseLite
 
-struct OGClinic: OGConvertable {
+class OGClinic: OGConvertable {
     // protocol
     var id: String = UUID().uuidString
     var entity: String = "\(OGClinic.self)"
 
     // entity
-    var name: String?
+    var name: String = ""
     var address: String?
     var city: String?
     var postalCode: String?
@@ -25,9 +25,21 @@ struct OGClinic: OGConvertable {
     
     // relation
     var practitionerId: String = ""
-    //patients
+
+    func patients() -> [OGPatient] {
+        return OGDatabaseManager.allPatients(for: self)
+    }
 
     func practitioner() -> OGPractitioner? {
         return OGDatabaseManager.practitioner(for: self)
+    }
+
+    func applyAction(_ action: OGConvertableAction) {
+        switch action {
+        case .saveUpdate:
+            OGDatabaseManager.save(self)
+        case .delete:
+            OGDatabaseManager.delete(self)
+        }
     }
 }
