@@ -1,0 +1,487 @@
+/* 
+  Localizable.strings
+  Scanner
+
+  Created by Kamil Budzynski on 12.05.2015.
+  Copyright (c) 2015 Orthogenic Laboratories. All rights reserved.
+*/
+
+//DataSync
+"DSUploadStarted" = "DataSync: Uploading database file...";
+"DSUploadToS3" = "DataSync: Server now uploading to s3...";
+"DSUploadToServer" = "DataSync: Uploading to server...";
+"DSUploadFinishTitle" = "DataSync: Success";
+"DSUploadFinishMessage" = "Data has been successfully uploaded!";
+"DSUploadFailTitle" = "DataSync: Error";
+"DSUploadFailMessage" = "An error has occured while trying to sync";
+"DSDownloadFinishTitle" = "DataSync: Download Finished";
+"DSDownloadFinishMessage" = "All Assets downloaded successfully!";
+"DSDownloadStarted" = "DataSync: Download Started...";
+
+
+//AppDelegate
+"DClinicInfoTitle" = "Enter clinic info";
+"DClinicInfoNameTextFieldPlaceholder" = "Clinic name";
+"DClinicInfoEmailTextFieldPlaceholder" = "Contact email";
+"DMigratingDBMessage" = "Migrating database – please be patient and do not close the app...";
+
+//LoginViewController
+"LNewPractitionerAlertTitle" = "New Practitioner";
+"LEnterPractitionerName" = "Enter practitioner name";
+"LLogin" = "Login";
+"LSelectClinicPractitionerAlertTitle" = "Unable to Login";
+"LSelectClinicPractitionerAlertMessage" = "Please select a clinic and practitioner to continue";
+"LSelectPractitionerAlertMessage" = "Please select practitioner to continue";
+"LNoEnoughFreeSpace" = "You do not have enough free space on your device to upload all data.";
+
+//MasterViewController
+"MLastOrder" = "Last order";
+"MOrderOn" = "on";
+"MDeletePatientAlertTitle" = "Delete Patient";
+"MDeletePatientAlertMessage" = "Are you sure you want to delete %@? You will lose all scans and previous orders associated with this patient. Warning: this cannot be undone!";
+
+//ClinicDetailViewController
+"CEditClinic" = "Edit Clinic";
+"CChangeClinic" = "Switch Clinic";
+"CEditPractitioner" = "Edit Practitioner";
+"CLogout" = "Logout";
+
+//SensorBatteryViewController
+"SBNotConnectedMessage" = "Sensor not connected";
+"SBSensorName" = "Sensor";
+
+//OrderTabBarController
+"OScansAndPhotos" = "Scans and Photos";
+"OScans" = "Scans";
+"OOrderInfo" = "Order Info";
+"OOrthoticInfo" = "Orthotic Order";
+
+//OrderScansViewController
+"OOrder" = "Order";
+"OSubmitButton" = "Submit Order";
+"OResetButton" = "Reset Order";
+"OAddAsset" = "Add Scan or Photo";
+"OAddAssetPhoto" = "Add Photo";
+"OTakePhotoOrderForm" = "Take Photo of Order Form";
+
+"O3DScan" = "Take 3D scan";
+"0PhotoTake" = "Take photo";
+"0PhotoChoose" = "Add photo from library";
+
+"O3DScan_Foot_ToeUp" = "Toes up";
+"O3DScan_Foot_ToeDown" = "Toes down";
+"O3DScan_Foot_FoamBox" = "Foam box";
+"O3DScan_Foot_PlasterCast" = "Plaster cast";
+
+"OCaptionPhoto" = "Please enter a caption for this photo";
+"OCaptionScan" = "Please enter a caption for this scan";
+
+"ODefaultScansNotProvidedTitle" = "Default scans not provided";
+"ODefaultScansnotProvidedMessage" = "Continue with submission anyway?";
+
+"OResetMessage" = "This will delete all photos and scans. Are you sure?";
+
+"OOrderSubmissionPromptTitle" = "Submit Order";
+"OOrderSubmissionPromptMessage" = "Are you sure you wish to submit this order? This operation cannot be undone.";
+
+"OSavingScan" = "Saving scan...";
+"OSavingPhoto" = "Saving photo...";
+
+"OSubmittingOrder" = "Submitting order...";
+"OUploadingFiles" = "Uploading files...";
+"OSubmittingOrderErrorTitle" = "Error submitting order!";
+"OSubmittingOrderErrorGenericMessage" = "Please try again momentarily.";
+"OSubmittingOrderErrorCheckInternetMessage" = "Please check your internet connection.";
+
+"OSubmittingOrderSuccessTitle" = "Order submitted successfully!";
+"OSubmittingOrderSuccessMessage" = "A representative from Orthogenic Laboratories will be contacting you shortly to confirm your order.";
+
+"OAssetLF" = "Left foot";
+"OAssetRF" = "Right foot";
+"OAssetBothFeet" = "Both feet";
+"OAssetShoeInsoles" = "Insoles \\ Shoes";
+"OAssetReplicate" = "Replicate Previous Orthotics";
+"OAssetPhotos" = "Photos";
+"OAssetInsoles" = "Insoles";
+"OAssetShoes" = "Shoes";
+
+
+"OSaveErrorTitle" = "Error Saving File";
+"OSaveErrorDescription" = "Please try again.";
+
+//OrderHistoryViewController
+"HSubmittedOn" = "Submitted on";
+"HLoadPreviousOrder" = "Load previous order";
+"HLoadPreviousOrderTitle" = "Load previous order";
+"HLoadPreviousOrderMessage" = "This will overwrite the current order. If you have already started working on this order, you will lose this data. Are you sure?";
+
+//AssetDetailViewController
+"AChangeCaption" = "Change Caption";
+"ADeleteAsset" = "Delete";
+"ADeleteMessage" = "Are you sure? This cannot be undone.";
+
+// ModelViewDetailViewController
+"MReviewScan" = "Review Scan";
+"MLoadErrorTitle" = "Error Loading Model";
+"MLoadErrorDescription" = "Please try taking another scan.";
+
+//PatientInfoFormViewController
+
+
+//PatientAddFormViewController
+"PCloseAlertTitle" = "Are you sure?";
+"PCloseAlertMessage" = "All entered information will be lost.";
+"PCloseAlertCloseButton" = "Close";
+
+
+//ScanViewController
+"STakeScan" = "Take Scan";
+"SCancelAlertTitle" = "Cancel Scan";
+"SCancelAlertDescription" = "Are you sure?";
+
+"SCountdownBeforeScanMessage" = "Scanning in %ld...";
+"SCountdownDuringScanMessage" = "Finished in %ld...";
+"SAlignAndLockMessage" = "Line up the object at the center of the crosshairs, and tap SET DISTANCE to set the scanning distance";
+"SVerifyAndScanMessage" = "Please ensure the entire object is inside the box and completely highlighted red, then tap SCAN";
+
+"SCaptureKeyframeMessage" = "Please hold still while stabilize the image...";
+"STrackingLostMessage" = "Tracking Lost! Please Realign or Press Reset.";
+"STooCloseMessage" = "Too close to the object! Please step back.";
+"STooFarMessage" = "Please get closer to the object.";
+"SRecoveringMessage" = "Recovering – please move gently.";
+"SNotInViewMessage" = "Please move slowly towards the object.";
+
+"SApplyingTextureMessage" = "Applying texture... % 3d%%";
+
+"SMemoryAlertTitle" = "Memory alert";
+"SMemoryAlertAbortColorizingMessage" = "Memory is running low. Aborting colorizing now.";
+"SMemoryAlertAbortScanningMessage" = "Memory is running low. Aborting scanning now.";
+
+"SAlignAndLockInstructionTitle" = "Set scanning distance";
+"SAlignAndLockInstructionMessage" = "Line up the object at the center of the crosshairs, and tap SET DISTANCE to set the scanning distance";
+
+"SVerifyAndScanInstructionTitle" = "Begin scanning";
+"SVerifyAndScanInstructionMessage1" = "Please ensure the entire object is inside the box and completely highlighted red, then tap SCAN";
+"SVerifyAndScanInstructionMessage2" = "When the scan begins, move the scanner slowly around the object to capture your cast";
+"SVerifyAndScanInstructionMessage3" = "Ensure the object is filled in entirely in white for an accurate scan";
+
+
+//MeshViewController
+"MSaveScanButtonTitle" = "Save Scan";
+"MSaveErrorAlertTitle" = "Could not save model";
+"MSaveErrorAlertMessage" = "Exporting failed: %@";
+"MProcessingScan" = "Processing scan...";
+
+
+//XLFViewController
+"XLFValidForm" = "Valid form";
+"XLFormViewController_ValidationErrorTitle" = "Validation error";
+
+
+//OrderOptionsWithCustomEntryViewController
+"OCCustomCellText" = "<< Enter Other Diagnosis >>";
+"OCCustomEntryAlertTitle" = "Other Diagnosis";
+"OCCustomEntryAlertPlaceholder" = "Enter Diagnosis";
+
+
+
+//Clinic forms
+"XLFNewClinic" = "New Clinic";
+"XLFEditClinic" = "Edit Clinic";
+"XLFName" = "Name";
+"XLFAddress" = "Address";
+"XLFCity" = "City";
+"XLFProvince" = "Province";
+"XLFProvinceBritishColumbia" = "British Columbia";
+"XLFProvinceAlberta" = "Alberta";
+"XLFProvinceSaskatchewan" = "Saskatchewan";
+"XLFProvinceManitoba" = "Manitoba";
+"XLFProvinceOntario" = "Ontario";
+"XLFProvinceQuebec" = "Quebec";
+"XLFProvinceNewBrunswick" = "New Brunswick";
+"XLFProvinceNewfoundlandAndLabrador" = "Newfoundland and Labrador";
+"XLFProvinceNovaScotia" = "Nova Scotia";
+"XLFProvincePrinceEdwardIsland" = "Prince Edward Island";
+"XLFProvinceYukon" = "Yukon";
+"XLFProvinceNorthwestTerritories" = "Northwest Territories";
+"XLFProvinceNunavut" = "Nunavut";
+"XLFPostalCode" = "Postal code";
+"XLFEmail" = "Contact email";
+"XLFPhoneNumber" = "Phone number";
+"XLFSaveClinic" = "Save clinic";
+
+
+//Practitioner forms
+"XLFNewPractitioner" = "New Practitioner";
+"XLFEditPractitioner" = "Edit Practitioner";
+
+//Patient forms
+"XLFNewPatient" = "New Patient";
+"XLFSavePatient" = "Save patient";
+"XLFViewPreviousOrders" = "View Previous Orders";
+"XLFFirstName" = "First name";
+"XLFLastName" = "Last name";
+"XLFDateOfBirth" = "Date of birth";
+"XLFGender" = "Gender";
+"XLFGenderMale" = "Male";
+"XLFGenderFemale" = "Female";
+"XLFWeight" = "Weight";
+"XLFWeightUnitLb" = "lbs";
+"XLFWeightUnitKg" = "kg";
+"XLFShoeSize" = "Shoe size";
+"XLFFootTemplateSizeLeft" = "Left foot size";
+"XLFFootTemplateSizeRight" = "Right foot size";
+"XLFClinicName" = "Clinic";
+"XLFNotes" = "Patient notes";
+
+
+////Order forms
+
+//Base
+"QuickOrderAlertTitle" = "Quick Order";
+"QuickOrderAlertMessage" = "This will leave all remaining options to the lab's discretion. Are you sure?";
+
+//Common
+"XLFNoValueDisplayText" = "Tap to select";
+"XLFPleaseSelectOptionValidationMsg" = "Please select an option for %@";
+
+//Basic
+"XLFDeviceFlexibilityRequired" = "Device Flexibility (Required)";
+"XLFDeviceFlexibility" = "Device Flexibility";
+"XLFDeviceFlexibilityFlexible" = "Flexible";
+"XLFDeviceFlexibilitySemiRigid" = "Semi-rigid";
+"XLFDeviceFlexibilityRigid" = "Rigid";
+
+"XLFShoeStyleRequired" = "Shoe Style (Required)";
+"XLFShoeStyle" = "Shoe Style";
+"XLFShoeStyleRunners" = "Runners";
+"XLFShoeStyleWorkboot" = "Workboot/Safety Shoe";
+"XLFShoeStyleMensDressNoInsole" = "Men's Dress Shoe - no insole";
+"XLFShoeStyleMensDressRemovInsole" = "Men's Dress Shoe - remov insole";
+"XLFShoeStyleFlats" = "Flats";
+"XLFShoeStyleWedgeHeel" = "Wedge/Heel";
+"XLFShoeStyleSkates" = "Skates";
+"XLFShoeStyleCleats" = "Cleats";
+"XLFShoeStyleCasualNoInsole" = "Casual - no insole";
+"XLFShoeStyleCasualRemovInsole" = "Casual - remov insole";
+"XLFShoeStyleSandal" = "Sandal";
+"XLFShoeStyleBirkenstock" = "Birkenstock";
+
+"XLFDiagnosesRequired" = "Diagnoses (Required)";
+"XLFDiagnosisBothFeet" = "Both feet";
+"XLFDiagnosisLeftFoot" = "Left foot";
+"XLFDiagnosisRightFoot" = "Right foot";
+"XLFDiagnosisAddNew" = "Add diagnosis";
+"XLFDiagnosisMustBeProvided" = "At least one diagnosis must be provided";
+
+"XLFDiagnosisMetarsalgiaClawToes" = "Metarsalgia/claw toes";
+"XLFDiagnosisPlantarFasciitisTightPF" = "Plantar Fasciitis/Tight PF";
+"XLFDiagnosisHeelPain" = "Heel Pain";
+"XLFDiagnosisDiabetesMellitusRA" = "Diabetes Mellitus/RA";
+"XLFDiagnosisExcessivePronation" = "Excessive Pronation";
+"XLFDiagnosisExcessiveSupination" = "Excessive Supination";
+"XLFDiagnosisAchillesPainEquinus" = "Achilles Pain/Equinus";
+"XLFDiagnosisLLD" = "LLD";
+"XLFDiagnosisShort1stRay" = "Short 1st Ray";
+"XLFDiagnosis1stMTPpain" = "1st MTP pain";
+"XLFDiagnosisHypermobilePesPlanusPronation" = "Hypermobile Pes Planus/Pronation";
+"XLFDiagnosisLateralAnkleSprainsInstability" = "Lateral Ankle Sprains/Instability";
+"XLFDiagnosisHyperSensitiveFeetLossOfFattyTissue" = "Hyper Sensitive Feet/Loss of Fatty Tissue";
+
+"XLFCallousPattern" = "Callous Pattern";
+"XLFCallousPatternDistalApicalToes" = "Distal apical toes";
+"XLFCallousPatternMedialDistalHallus1stMTP" = "Medial distal hallus / 1st MTP";
+"XLFCallousPattern5thMTP" = "5th MTP";
+"XLFCallousPatternCentralMTPs" = "Central MTPs";
+"XLFCallousPattern2ndMTP" = "2nd MTP";
+"XLFCallousPattern1stMTP" = "1st MTP";
+"XLFCallousPatternStyloid" = "Styloid";
+"XLFCallousPatternNavicular" = "Navicular";
+"XLFCallousPatternLateralHeel" = "Lateral Heel";
+"XLFCallousPatternMedialHeel" = "Medial Heel";
+"XLFCallousPatternLeftFoot" = "Left Foot";
+"XLFCallousPatternRightFoot" = "Right Foot";
+
+//Options
+"XLFAtLabDiscretion" = "At Lab Discretion";
+
+"XLFEVABlockTypeHeading" = "EVA Block Type";
+"XLFEVABlockType" = "Type";
+
+"XLFBlockType30/50DuroEVA" = "30/50 Duro (EVA)";
+"XLFBlockType30/50DuroCork" = "30/50 Duro (Cork)";
+"XLFBlockType50/70Duro" = "50/70 Duro";
+"XLFBlockType30Duro" = "30 Duro";
+"XLFBlockType40Duro" = "40 Duro";
+"XLFBlockType50Duro" = "50 Duro";
+"XLFBlockType65Duro" = "65 Duro";
+"XLFBlockTypeTridensityComfort" = "Tridensity (Comfort – 65/25/50) (+ $20)";
+"XLFBlockTypeTridensitySport" = "Tridensity (Sport – 65/35/50) (+ $20)";
+"XLFBlockTypeGaitPlate" = "Gait plate – to induce out-toeing (+ $30)";
+
+"XLFTopCoverHeading" = "Top Cover";
+"XLFPrimaryTopCoverType" = "Type (Primary)";
+"XLFPrimaryTopCoverColor" = "Colour (Primary)";
+"XLFPrimaryTopCoverMeasurement" = "Thickness (Primary)";
+"XLFSecondaryTopCoverType" = "Type (Secondary)";
+"XLFSecondaryTopCoverColor" = "Colour (Secondary)";
+"XLFSecondaryTopCoverMeasurement" = "Thickness (Secondary)";
+
+"XLFTopCoverMicrocellPuff" = "Microcell Puff";
+"XLFTopCoverLunalastik" = "Lunalastik";
+"XLFTopCoverNyplex" = "Nyplex";
+"XLFTopCoverSpenco" = "Spenco";
+"XLFTopCoverETC" = "ETC";
+"XLFTopCoverPCell" = "PCell";
+"XLFTopCoverVinyl" = "Vinyl";
+"XLFTopCoverTrinidad" = "Trinidad";
+"XLFTopCoverPoron" = "Poron";
+"XLFTopCoverLeather" = "Leather (+ $20)";
+"XLFTopCoverSuede" = "Suede (+ $20)";
+"XLFTopCoverXStatic" = "X-static (+ $20)";
+
+"XLFTopCoverColorBlack" = "Black";
+"XLFTopCoverColorBlue" = "Blue";
+"XLFTopCoverColorRed" = "Red";
+"XLFTopCoverColorGreen" = "Green";
+"XLFTopCoverColorPurple" = "Purple";
+"XLFTopCoverColorPinkPurple" = "Pink + Purple";
+"XLFTopCoverColorGreenPurple" = "Green + Purple";
+"XLFTopCoverColorMulti" = "Multi-colour";
+"XLFTopCoverColorBlueCamo" = "Blue camo";
+"XLFTopCoverColorBrownCamo" = "Brown camo";
+"XLFTopCoverColorBlackIce" = "Black ice";
+"XLFTopCoverColorBlueSwirl" = "Blue swirl";
+"XLFTopCoverColorBeige" = "Beige";
+"XLFTopCoverColorPink" = "Pink";
+"XLFTopCoverColorTan" = "Tan";
+"XLFTopCoverColorTanVaried" = "Tan (colour varies due to batch dye availability)";
+"XLFTopCoverColorNatural" = "Natural";
+"XLFTopCoverColorGrey" = "Grey";
+
+"XLFThermoplasticReinforcedMidlayerWithCost" = "Thermoplastic reinforced midlayer (+ $10)";
+"XLFThermoplasticReinforcedMidlayer" = "Thermoplastic reinforced midlayer";
+"XLFThermoplasticReinforcedMidlayerNone" = "None";
+
+"XLFOrthoticOptionsHeading" = "Orthotic Options";
+"XLFOrthoticLength" = "Length";
+"XLFOrthoticLengthFull" = "Full";
+"XLFOrthoticLength3/4" = "3/4";
+"XLFOrthoticLengthSulcus" = "Sulcus";
+"XLFOrthoticWidth" = "Width";
+"XLFOrthoticWidthNarrow" = "Narrow";
+"XLFOrthoticWidthNormal" = "Normal";
+"XLFOrthoticWidthWide" = "Wide";
+
+"XLFAccommodationLeftFoot" = "L";
+"XLFAccommodationRightFoot" = "R";
+"XLFAccommodationBothFeet" = "L+R";
+"XLFAccommodation1stMetCutOut" = "1st Met Cut Out";
+"XLFAccommodation1stRayCutOut" = "1st Ray Cut Out";
+"XLFAccommodationMedialFlange" = "Medial Flange";
+"XLFAccommodationLateralFlange" = "Lateral Flange";
+"XLFAccommodationCuboidSupport" = "Cuboid Support";
+"XLFAccommodationHeelCup" = "Heel Cup";
+"XLFAccommodationHeelPlug" = "Heel Plug";
+"XLFAccommodationHeelWell" = "Heel Well";
+"XLFAccommodationHorseshoeHeelPad" = "Horseshoe Heel Pad";
+"XLFAccommodationHeelCupLow" = "Low (10mm)";
+"XLFAccommodationHeelCupMed" = "Med (14mm)";
+"XLFAccommodationHeelCupHigh" = "High/UCBL (18mm)";
+"XLFAccommodationPlantarFasciaGroove" = "Plantar Fascia Groove";
+"XLFAccommodationHeelCushioning" = "Heel Cushioning";
+"XLFAccommodationHeelCushioningSmall" = "Small";
+"XLFAccommodationHeelCushioningLarge" = "Large";
+"XLFAccommodationSoftPoronArchPadCookie" = "Soft Poron Arch Pad/Cookie";
+"XLFAccommodationMetExcavation" = "Met Excavation";
+"XLFAccommodationMetExcavationLeft" = "Left";
+"XLFAccommodationMetExcavationRight" = "Right";
+"XLFAccommodationMetPad" = "Met Pad";
+"XLFAccommodationMetPadSmall" = "Small (1-2mm)";
+"XLFAccommodationMetPadMed" = "Med (3-4mm)";
+"XLFAccommodationMetPadLarge" = "Large (5-7+mm)";
+"XLFAccommodationMetBar" = "Met Bar";
+"XLFAccommodationMetBarSmall" = "Small (1-2mm)";
+"XLFAccommodationMetBarMed" = "Med (3-4mm)";
+"XLFAccommodationMetBarLarge" = "Large (5-7+mm)";
+"XLFAccommodationNeuromaPad" = "Neuroma Pad";
+"XLFAccommodationNeuromaPadSmall" = "S";
+"XLFAccommodationNeuromaPadMed" = "M";
+"XLFAccommodationNeuromaPadLarge" = "L";
+"XLFAccommodationNeuromaPadBetween" = "Between %@ & %@ Metatarsals";
+"XLFAccommodationFlexibleMortonsExtension" = "Flexible Morton's Extension";
+"XLFAccommodationKineticWedge" = "Kinetic Wedge";
+"XLFAccommodationReverseMortonsExtension" = "Reverse Morton's Extension";
+
+"XLFPostingsNeutral" = "Neutral (no postings)";
+"XLFPostingsForefootPost" = "Forefoot post";
+"XLFPostingsForefootToCalcanealVertical" = "Forefoot post";
+"XLFPostingsLeft" = "Left";
+"XLFPostingsRight" = "Right";
+"XLFPostingsVarus" = "Varus";
+"XLFPostingsValgus" = "Valgus";
+"XLFPostingsRearfootPost" = "Rearfoot post";
+"XLFPostingsRearfootHeelLiftBuiltIn" = "Heel lift (Built In)";
+"XLFPostingsRearfootHeelLiftLooseRemovable" = "Heel lift (Loose/Removable)";
+"XLFPostingsRearfootHeelLiftNone" = "None";
+"XLFPostingsLeftWithMM" = "    Left (mm)"; // HACK: indent for text label
+"XLFPostingsRightWithMM" = "    Right (mm)"; // HACK: indent for text label
+"XLFPostingsAdditionalNotes" = "Additional Order Notes";
+
+"XLFShippingStandardHeader" = "Standard (Ships in 5 – 7 business days)";
+"XLFShippingStandardFree" = "Free Shipping – 3+ order minimum required";
+"XLFShippingStandardIndividual" = "Ship Order Individually – Standard Shipping Rates Apply";
+"XLFShippingStandardLabPickUp" = "Lab Pick Up – You will be notified by email when your order is ready";
+"XLFShippingRushHeader" = "Rush (Standard shipping rates apply)";
+"XLFShippingRushNone" = "None";
+"XLFShippingRush1Day" = "1 Day Rush (+ $35) – Ships in 24 hours";
+"XLFShippingRush2Day" = "2 Day Rush (+ $30) – Ships in 48 hours";
+"XLFShippingRush3Day" = "3 Day Rush (+ $25) – Ships in 72 hours";
+"XLFShippingRush4Day" = "4 Day Rush";
+"XLFShippingAddressHeader" = "Confirm Shipping Information";
+"XLFShippingAddressClinicName" = "Clinic Name";
+"XLFShippingAddressContact" = "Shipping Contact";
+"XLFShippingAddressPhoneNumber" = "Phone Number";
+"XLFShippingAddressAddress" = "Address";
+"XLFShippingAddressCity" = "City";
+"XLFShippingAddressProvince" = "Province";
+"XLFShippingAddressPostalCode" = "Postal Code";
+
+
+//OrderInfoBasicViewController
+"OBQuickOrder" = "Quick Order (options at lab's discretion)";
+"OBContinue" = "Continue to Options";
+
+//OrderInfoOptionsViewController
+"OOBack" = "Back";
+"OOContinue" = "Continue to Accommodations";
+"OOAdditionalCostTitle" = "Additional Cost";
+"OOAdditionalCostMessage" = "Please note that the chosen %@ incurs an additional cost of $%@";
+"OOAdditionalCostBlockType" = "block type";
+"OOAdditionalCostTopCover" = "top cover";
+"OOAdditionalCostThermoplasticReinforcedMidlayer" = "thermoplastic reinforced midlayer";
+
+//OrderInfoAccommodationsViewController
+"OABack" = "Back";
+"OAContinue" = "Continue to Postings";
+
+//OrderInfoPostingsViewController
+"OPBack" = "Back";
+"OPSubmit" = "Submit Order";
+
+//ShippingOptionsViewController
+"SOConfirmShippingOptions" = "Confirm Shipping Options";
+
+
+//Common
+
+"CDefault" = "default";
+"CNoError" = "No errors found";
+"COk" = "OK";
+"CCancel" = "Cancel";
+"CBack" = "Back";
+"CWarning" = "Warning";
+"CNeverShow" = "Never show this again";
+"CContinue" = "Continue";
+"CDone" = "Done";
+"CDelete" = "Delete";

@@ -20,6 +20,7 @@ protocol  OGConvertable: AnyObject, Codable {
     func applyAction(_ action:OGConvertableAction)
     func toDocument() -> CBLMutableDocument
     static func fromDictionaryObject(doc: CBLDictionary) -> OGConvertable
+    func delete()
 }
 
 extension OGConvertable {
@@ -41,5 +42,9 @@ extension OGConvertable {
         let data = try! JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted)
         let decoded = try! JSONDecoder().decode(Self.self, from: data)
         return decoded
+    }
+    
+    func delete() {
+        OGDatabaseManager.delete(self)
     }
 }

@@ -11,6 +11,37 @@
 		3B1EDCA423A2C0EF00216DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1EDCA323A2C0EF00216DC0 /* Main.storyboard */; };
 		3B205B3C23A2884E0092F859 /* String+fileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B205B3B23A2884E0092F859 /* String+fileName.swift */; };
 		3B205B3E23A28EBB0092F859 /* OrderSubmissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B205B3D23A28EBA0092F859 /* OrderSubmissionManager.swift */; };
+		3B2CEA2423A41D9D00723ABB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2CEA2323A41D9C00723ABB /* AVFoundation.framework */; };
+		3B2CEA2623A41E1C00723ABB /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2CEA2523A41E1C00723ABB /* Structure.framework */; };
+		3B2CEA2823A41E4E00723ABB /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2CEA2723A41E4D00723ABB /* Structure.framework */; };
+		3B2CEA2A23A420EC00723ABB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2CEA2923A420EC00723ABB /* Accelerate.framework */; };
+		3B2CEA2C23A420F300723ABB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2CEA2B23A420F300723ABB /* ImageIO.framework */; };
+		3B2CEA2D23A420FD00723ABB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B477C6423A41C5100E06257 /* libz.tbd */; };
+		3B477C5A23A41B8A00E06257 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B477C5923A41B8A00E06257 /* AudioToolbox.framework */; };
+		3B477C5C23A41B9A00E06257 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B477C5B23A41B9900E06257 /* GLKit.framework */; };
+		3B477C5E23A41BAA00E06257 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B477C5D23A41BAA00E06257 /* ExternalAccessory.framework */; };
+		3B477C6023A41BB400E06257 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B477C5F23A41BB400E06257 /* CoreMedia.framework */; };
+		3B477C6223A41BBC00E06257 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B477C6123A41BBC00E06257 /* CoreMotion.framework */; };
+		3BBC914E23A4076100DF5AE4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BBC914D23A4076100DF5AE4 /* Localizable.strings */; };
+		3BBC917523A414B700DF5AE4 /* ScanViewController+Camera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC915423A414B500DF5AE4 /* ScanViewController+Camera.mm */; };
+		3BBC917623A414B700DF5AE4 /* CalibrationOverlay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC915823A414B500DF5AE4 /* CalibrationOverlay.mm */; };
+		3BBC917723A414B700DF5AE4 /* ScanViewController+OpenGL.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC915B23A414B500DF5AE4 /* ScanViewController+OpenGL.mm */; };
+		3BBC917823A414B700DF5AE4 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC915C23A414B500DF5AE4 /* EAGLView.mm */; };
+		3BBC917923A414B700DF5AE4 /* ScanViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC916023A414B500DF5AE4 /* ScanViewController.mm */; };
+		3BBC917A23A414B700DF5AE4 /* ScanViewController+SLAM.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC916123A414B500DF5AE4 /* ScanViewController+SLAM.mm */; };
+		3BBC917B23A414B700DF5AE4 /* MeshRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC916223A414B600DF5AE4 /* MeshRenderer.mm */; };
+		3BBC917C23A414B700DF5AE4 /* STDepthFrame+ConstantDistance.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC916523A414B600DF5AE4 /* STDepthFrame+ConstantDistance.mm */; };
+		3BBC917D23A414B700DF5AE4 /* CustomShaders.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC916723A414B600DF5AE4 /* CustomShaders.mm */; };
+		3BBC917E23A414B700DF5AE4 /* ObjFileEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC916823A414B600DF5AE4 /* ObjFileEditor.m */; };
+		3BBC917F23A414B700DF5AE4 /* STDepthFrame+Swizzle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC916C23A414B600DF5AE4 /* STDepthFrame+Swizzle.mm */; };
+		3BBC918023A414B700DF5AE4 /* CustomUIKitStyles.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC916D23A414B700DF5AE4 /* CustomUIKitStyles.mm */; };
+		3BBC918123A414B700DF5AE4 /* MeshViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC916E23A414B700DF5AE4 /* MeshViewController.mm */; };
+		3BBC918223A414B700DF5AE4 /* ViewpointController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC916F23A414B700DF5AE4 /* ViewpointController.mm */; };
+		3BBC918323A414B700DF5AE4 /* ScanViewController+Sensor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC917323A414B700DF5AE4 /* ScanViewController+Sensor.mm */; };
+		3BBC918423A414B700DF5AE4 /* STDepthFramePublic.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC917423A414B700DF5AE4 /* STDepthFramePublic.mm */; };
+		3BBC918A23A4170100DF5AE4 /* InsetLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC918923A4170100DF5AE4 /* InsetLabel.m */; };
+		3BBC918D23A418BE00DF5AE4 /* ScanCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC918C23A418BE00DF5AE4 /* ScanCViewController.m */; };
+		3BBC919023A419C900DF5AE4 /* InstructionPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC918F23A419C900DF5AE4 /* InstructionPopupController.m */; };
 		3BC544A723A274540071E78E /* FormLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544A623A274540071E78E /* FormLoadable.swift */; };
 		3BC544A923A2757E0071E78E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544A823A2757E0071E78E /* Notifications.swift */; };
 		3BC544B023A2774A0071E78E /* ClinicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544AA23A277490071E78E /* ClinicDetailViewController.swift */; };
@@ -22,7 +53,6 @@
 		3BC544BD23A281BC0071E78E /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544BC23A281BC0071E78E /* UIColor+hex.swift */; };
 		3BC544BF23A285040071E78E /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544BE23A285030071E78E /* AppInfo.swift */; };
 		3BC544C123A2850A0071E78E /* DateFormattingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544C023A2850A0071E78E /* DateFormattingManager.swift */; };
-		7A0D42CC23A3057F00B6B822 /* Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D42CB23A3057F00B6B822 /* Test.mm */; };
 		7A1535692384A046003FF22E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1535682384A046003FF22E /* AppDelegate.swift */; };
 		7A15356B2384A046003FF22E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A15356A2384A046003FF22E /* SceneDelegate.swift */; };
 		7A1535722384A04D003FF22E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1535712384A04D003FF22E /* Assets.xcassets */; };
@@ -70,6 +100,58 @@
 		3B1EDCA323A2C0EF00216DC0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3B205B3B23A2884E0092F859 /* String+fileName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+fileName.swift"; sourceTree = "<group>"; };
 		3B205B3D23A28EBA0092F859 /* OrderSubmissionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSubmissionManager.swift; sourceTree = "<group>"; };
+		3B2CEA2323A41D9C00723ABB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3B2CEA2523A41E1C00723ABB /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Structure.framework; sourceTree = "<group>"; };
+		3B2CEA2723A41E4D00723ABB /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Structure.framework; sourceTree = SOURCE_ROOT; };
+		3B2CEA2923A420EC00723ABB /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		3B2CEA2B23A420F300723ABB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3B477C5923A41B8A00E06257 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3B477C5B23A41B9900E06257 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		3B477C5D23A41BAA00E06257 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		3B477C5F23A41BB400E06257 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3B477C6123A41BBC00E06257 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		3B477C6323A41C4000E06257 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3B477C6423A41C5100E06257 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3BBC914D23A4076100DF5AE4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		3BBC915423A414B500DF5AE4 /* ScanViewController+Camera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "ScanViewController+Camera.mm"; sourceTree = "<group>"; };
+		3BBC915523A414B500DF5AE4 /* ScanViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewControllerDelegate.h; sourceTree = "<group>"; };
+		3BBC915623A414B500DF5AE4 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		3BBC915723A414B500DF5AE4 /* CustomUIKitStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIKitStyles.h; sourceTree = "<group>"; };
+		3BBC915823A414B500DF5AE4 /* CalibrationOverlay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CalibrationOverlay.mm; sourceTree = "<group>"; };
+		3BBC915923A414B500DF5AE4 /* MeshRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshRenderer.h; sourceTree = "<group>"; };
+		3BBC915A23A414B500DF5AE4 /* ScanViewController+SLAM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScanViewController+SLAM.h"; sourceTree = "<group>"; };
+		3BBC915B23A414B500DF5AE4 /* ScanViewController+OpenGL.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "ScanViewController+OpenGL.mm"; sourceTree = "<group>"; };
+		3BBC915C23A414B500DF5AE4 /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
+		3BBC915D23A414B500DF5AE4 /* MeshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshViewController.h; sourceTree = "<group>"; };
+		3BBC915E23A414B500DF5AE4 /* STDepthFramePublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDepthFramePublic.h; sourceTree = "<group>"; };
+		3BBC915F23A414B500DF5AE4 /* ScanViewController+Sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScanViewController+Sensor.h"; sourceTree = "<group>"; };
+		3BBC916023A414B500DF5AE4 /* ScanViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScanViewController.mm; sourceTree = "<group>"; };
+		3BBC916123A414B500DF5AE4 /* ScanViewController+SLAM.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "ScanViewController+SLAM.mm"; sourceTree = "<group>"; };
+		3BBC916223A414B600DF5AE4 /* MeshRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MeshRenderer.mm; sourceTree = "<group>"; };
+		3BBC916323A414B600DF5AE4 /* ScanViewController+Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScanViewController+Camera.h"; sourceTree = "<group>"; };
+		3BBC916423A414B600DF5AE4 /* CalibrationOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationOverlay.h; sourceTree = "<group>"; };
+		3BBC916523A414B600DF5AE4 /* STDepthFrame+ConstantDistance.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "STDepthFrame+ConstantDistance.mm"; sourceTree = "<group>"; };
+		3BBC916623A414B600DF5AE4 /* ObjFileEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjFileEditor.h; sourceTree = "<group>"; };
+		3BBC916723A414B600DF5AE4 /* CustomShaders.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomShaders.mm; sourceTree = "<group>"; };
+		3BBC916823A414B600DF5AE4 /* ObjFileEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjFileEditor.m; sourceTree = "<group>"; };
+		3BBC916923A414B600DF5AE4 /* ScanViewController+OpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScanViewController+OpenGL.h"; sourceTree = "<group>"; };
+		3BBC916A23A414B600DF5AE4 /* CustomShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomShaders.h; sourceTree = "<group>"; };
+		3BBC916B23A414B600DF5AE4 /* STDepthFrame+ConstantDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "STDepthFrame+ConstantDistance.h"; sourceTree = "<group>"; };
+		3BBC916C23A414B600DF5AE4 /* STDepthFrame+Swizzle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "STDepthFrame+Swizzle.mm"; sourceTree = "<group>"; };
+		3BBC916D23A414B700DF5AE4 /* CustomUIKitStyles.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomUIKitStyles.mm; sourceTree = "<group>"; };
+		3BBC916E23A414B700DF5AE4 /* MeshViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MeshViewController.mm; sourceTree = "<group>"; };
+		3BBC916F23A414B700DF5AE4 /* ViewpointController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewpointController.mm; sourceTree = "<group>"; };
+		3BBC917023A414B700DF5AE4 /* ViewpointController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewpointController.h; sourceTree = "<group>"; };
+		3BBC917123A414B700DF5AE4 /* STDepthFrame+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "STDepthFrame+Swizzle.h"; sourceTree = "<group>"; };
+		3BBC917223A414B700DF5AE4 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		3BBC917323A414B700DF5AE4 /* ScanViewController+Sensor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "ScanViewController+Sensor.mm"; sourceTree = "<group>"; };
+		3BBC917423A414B700DF5AE4 /* STDepthFramePublic.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STDepthFramePublic.mm; sourceTree = "<group>"; };
+		3BBC918823A4170100DF5AE4 /* InsetLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsetLabel.h; sourceTree = "<group>"; };
+		3BBC918923A4170100DF5AE4 /* InsetLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsetLabel.m; sourceTree = "<group>"; };
+		3BBC918B23A418BE00DF5AE4 /* ScanCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanCViewController.h; sourceTree = "<group>"; };
+		3BBC918C23A418BE00DF5AE4 /* ScanCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanCViewController.m; sourceTree = "<group>"; };
+		3BBC918E23A419C800DF5AE4 /* InstructionPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructionPopupController.h; sourceTree = "<group>"; };
+		3BBC918F23A419C900DF5AE4 /* InstructionPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionPopupController.m; sourceTree = "<group>"; };
 		3BC544A623A274540071E78E /* FormLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormLoadable.swift; path = Models/FormLoadable.swift; sourceTree = "<group>"; };
 		3BC544A823A2757E0071E78E /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		3BC544AA23A277490071E78E /* ClinicDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicDetailViewController.swift; sourceTree = "<group>"; };
@@ -84,8 +166,6 @@
 		44E42F9B3623D54543ACCF12 /* Pods-CB_DB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB_DB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CB_DB/Pods-CB_DB.debug.xcconfig"; sourceTree = "<group>"; };
 		686DAC9CABEEC3185F8381D2 /* Pods-CB_DB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB_DB.release.xcconfig"; path = "Target Support Files/Pods-CB_DB/Pods-CB_DB.release.xcconfig"; sourceTree = "<group>"; };
 		7A0D42C723A3052500B6B822 /* CB_DB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CB_DB-Bridging-Header.h"; sourceTree = "<group>"; };
-		7A0D42CB23A3057F00B6B822 /* Test.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Test.mm; sourceTree = "<group>"; };
-		7A0D42CD23A3058B00B6B822 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		7A1535652384A046003FF22E /* CB_DB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CB_DB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1535682384A046003FF22E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A15356A2384A046003FF22E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +215,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2CEA2D23A420FD00723ABB /* libz.tbd in Frameworks */,
+				3B2CEA2C23A420F300723ABB /* ImageIO.framework in Frameworks */,
+				3B2CEA2A23A420EC00723ABB /* Accelerate.framework in Frameworks */,
+				3B2CEA2823A41E4E00723ABB /* Structure.framework in Frameworks */,
+				3B2CEA2623A41E1C00723ABB /* Structure.framework in Frameworks */,
+				3B2CEA2423A41D9D00723ABB /* AVFoundation.framework in Frameworks */,
+				3B477C6023A41BB400E06257 /* CoreMedia.framework in Frameworks */,
+				3B477C5E23A41BAA00E06257 /* ExternalAccessory.framework in Frameworks */,
 				F0C85D0BB5879F2B139EE80E /* Pods_CB_DB.framework in Frameworks */,
+				3B477C5C23A41B9A00E06257 /* GLKit.framework in Frameworks */,
+				3B477C5A23A41B8A00E06257 /* AudioToolbox.framework in Frameworks */,
+				3B477C6223A41BBC00E06257 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +241,58 @@
 				3BC544BE23A285030071E78E /* AppInfo.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		3BBC915323A4148900DF5AE4 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				3BBC918E23A419C800DF5AE4 /* InstructionPopupController.h */,
+				3BBC918F23A419C900DF5AE4 /* InstructionPopupController.m */,
+				3BBC918823A4170100DF5AE4 /* InsetLabel.h */,
+				3BBC918923A4170100DF5AE4 /* InsetLabel.m */,
+				3BBC916423A414B600DF5AE4 /* CalibrationOverlay.h */,
+				3BBC915823A414B500DF5AE4 /* CalibrationOverlay.mm */,
+				3BBC916A23A414B600DF5AE4 /* CustomShaders.h */,
+				3BBC916723A414B600DF5AE4 /* CustomShaders.mm */,
+				3BBC915723A414B500DF5AE4 /* CustomUIKitStyles.h */,
+				3BBC916D23A414B700DF5AE4 /* CustomUIKitStyles.mm */,
+				3BBC917223A414B700DF5AE4 /* EAGLView.h */,
+				3BBC915C23A414B500DF5AE4 /* EAGLView.mm */,
+				3BBC915923A414B500DF5AE4 /* MeshRenderer.h */,
+				3BBC916223A414B600DF5AE4 /* MeshRenderer.mm */,
+				3BBC915D23A414B500DF5AE4 /* MeshViewController.h */,
+				3BBC916E23A414B700DF5AE4 /* MeshViewController.mm */,
+				3BBC916623A414B600DF5AE4 /* ObjFileEditor.h */,
+				3BBC916823A414B600DF5AE4 /* ObjFileEditor.m */,
+				3BBC915623A414B500DF5AE4 /* ScanViewController.h */,
+				3BBC916023A414B500DF5AE4 /* ScanViewController.mm */,
+				3BBC916323A414B600DF5AE4 /* ScanViewController+Camera.h */,
+				3BBC915423A414B500DF5AE4 /* ScanViewController+Camera.mm */,
+				3BBC916923A414B600DF5AE4 /* ScanViewController+OpenGL.h */,
+				3BBC915B23A414B500DF5AE4 /* ScanViewController+OpenGL.mm */,
+				3BBC915F23A414B500DF5AE4 /* ScanViewController+Sensor.h */,
+				3BBC917323A414B700DF5AE4 /* ScanViewController+Sensor.mm */,
+				3BBC915A23A414B500DF5AE4 /* ScanViewController+SLAM.h */,
+				3BBC916123A414B500DF5AE4 /* ScanViewController+SLAM.mm */,
+				3BBC915523A414B500DF5AE4 /* ScanViewControllerDelegate.h */,
+				3BBC916B23A414B600DF5AE4 /* STDepthFrame+ConstantDistance.h */,
+				3BBC916523A414B600DF5AE4 /* STDepthFrame+ConstantDistance.mm */,
+				3BBC917123A414B700DF5AE4 /* STDepthFrame+Swizzle.h */,
+				3BBC916C23A414B600DF5AE4 /* STDepthFrame+Swizzle.mm */,
+				3BBC915E23A414B500DF5AE4 /* STDepthFramePublic.h */,
+				3BBC917423A414B700DF5AE4 /* STDepthFramePublic.mm */,
+				3BBC917023A414B700DF5AE4 /* ViewpointController.h */,
+				3BBC916F23A414B700DF5AE4 /* ViewpointController.mm */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		3BBC918523A4162D00DF5AE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B2CEA2723A41E4D00723ABB /* Structure.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		3BC544B723A277BC0071E78E /* Order */ = {
@@ -185,6 +328,17 @@
 		72E4DD1CCE27008240A5CB82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B2CEA2B23A420F300723ABB /* ImageIO.framework */,
+				3B2CEA2923A420EC00723ABB /* Accelerate.framework */,
+				3B2CEA2323A41D9C00723ABB /* AVFoundation.framework */,
+				3B477C6423A41C5100E06257 /* libz.tbd */,
+				3B477C6323A41C4000E06257 /* libc++.tbd */,
+				3B2CEA2523A41E1C00723ABB /* Structure.framework */,
+				3B477C6123A41BBC00E06257 /* CoreMotion.framework */,
+				3B477C5F23A41BB400E06257 /* CoreMedia.framework */,
+				3B477C5D23A41BAA00E06257 /* ExternalAccessory.framework */,
+				3B477C5B23A41B9900E06257 /* GLKit.framework */,
+				3B477C5923A41B8A00E06257 /* AudioToolbox.framework */,
 				133D6A53C2AE5F283779AA1A /* Pods_CB_DB.framework */,
 			);
 			name = Frameworks;
@@ -194,8 +348,8 @@
 			isa = PBXGroup;
 			children = (
 				7A0D42C723A3052500B6B822 /* CB_DB-Bridging-Header.h */,
-				7A0D42CB23A3057F00B6B822 /* Test.mm */,
-				7A0D42CD23A3058B00B6B822 /* Test.h */,
+				3BBC918B23A418BE00DF5AE4 /* ScanCViewController.h */,
+				3BBC918C23A418BE00DF5AE4 /* ScanCViewController.m */,
 			);
 			path = Scans;
 			sourceTree = "<group>";
@@ -229,9 +383,12 @@
 				7A2E9B7423A19F35004A449B /* Managers */,
 				7AF9027A23A1A35C00CD241B /* Utils */,
 				3B1EDCA023A2BCE700216DC0 /* Sources */,
+				3BBC915323A4148900DF5AE4 /* Scanner */,
+				3BBC918523A4162D00DF5AE4 /* Frameworks */,
 				7A1535712384A04D003FF22E /* Assets.xcassets */,
 				7A1535732384A04D003FF22E /* LaunchScreen.storyboard */,
 				7A1535762384A04D003FF22E /* Info.plist */,
+				3BBC914D23A4076100DF5AE4 /* Localizable.strings */,
 			);
 			path = CB_DB;
 			sourceTree = "<group>";
@@ -405,6 +562,7 @@
 				7A2E9B6B23A19DCB004A449B /* Order.storyboard in Resources */,
 				7A2E9B6C23A19DCB004A449B /* Scans.storyboard in Resources */,
 				7A2E9B5D23A19D3A004A449B /* ShortOrderInfo.storyboard in Resources */,
+				3BBC914E23A4076100DF5AE4 /* Localizable.strings in Resources */,
 				7A1535752384A04D003FF22E /* LaunchScreen.storyboard in Resources */,
 				7A1535722384A04D003FF22E /* Assets.xcassets in Resources */,
 			);
@@ -459,7 +617,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A0D42CC23A3057F00B6B822 /* Test.mm in Sources */,
 				7AF9029623A1A4B700CD241B /* OGOrder+SubmissionHelpers.swift in Sources */,
 				7AF9029323A1A4B700CD241B /* OGClinic+Forms.swift in Sources */,
 				3BC544A923A2757E0071E78E /* Notifications.swift in Sources */,
@@ -469,13 +626,18 @@
 				7A2E9B6523A19DB5004A449B /* OrderTabBarController.swift in Sources */,
 				7AF9028223A1A3DE00CD241B /* Enum_String+localized.swift in Sources */,
 				3BC544A723A274540071E78E /* FormLoadable.swift in Sources */,
+				3BBC918A23A4170100DF5AE4 /* InsetLabel.m in Sources */,
+				3BBC917E23A414B700DF5AE4 /* ObjFileEditor.m in Sources */,
 				7A2E9B7023A19E48004A449B /* ShortOrderInfoViewController.swift in Sources */,
+				3BBC917B23A414B700DF5AE4 /* MeshRenderer.mm in Sources */,
 				3BC544B623A277B90071E78E /* OrderHistoryViewController.swift in Sources */,
 				7AA12012238F1F3B006AF420 /* OGPractitioner+ListItem.swift in Sources */,
+				3BBC917623A414B700DF5AE4 /* CalibrationOverlay.mm in Sources */,
 				7AF9029123A1A4B700CD241B /* OGClinic+ListItem.swift in Sources */,
 				7A2E9B7623A19F86004A449B /* AuthenticationManager.swift in Sources */,
 				7AA12010238F1F36006AF420 /* OGOrder.swift in Sources */,
 				7AF9028123A1A3DE00CD241B /* String+localize.swift in Sources */,
+				3BBC917823A414B700DF5AE4 /* EAGLView.mm in Sources */,
 				3BC544B023A2774A0071E78E /* ClinicDetailViewController.swift in Sources */,
 				7AA1200C238F1F2A006AF420 /* OGDatabaseManager.swift in Sources */,
 				7AA1200E238F1F31006AF420 /* OGClinic.swift in Sources */,
@@ -483,29 +645,43 @@
 				3BC544B223A2774A0071E78E /* ClinicNewEditViewController.swift in Sources */,
 				7AF9028823A1A44D00CD241B /* DatePopoverViewController.swift in Sources */,
 				3B205B3E23A28EBB0092F859 /* OrderSubmissionManager.swift in Sources */,
+				3BBC919023A419C900DF5AE4 /* InstructionPopupController.m in Sources */,
+				3BBC917C23A414B700DF5AE4 /* STDepthFrame+ConstantDistance.mm in Sources */,
+				3BBC918123A414B700DF5AE4 /* MeshViewController.mm in Sources */,
 				7A2E9B7823A1A183004A449B /* PatientsMasterViewController.swift in Sources */,
+				3BBC917D23A414B700DF5AE4 /* CustomShaders.mm in Sources */,
 				3BC544BD23A281BC0071E78E /* UIColor+hex.swift in Sources */,
 				7A20794F238B640D009447BB /* LoginViewController.swift in Sources */,
 				3BC544BB23A27DA80071E78E /* PractitionerViewEditViewController.swift in Sources */,
 				7AF9029523A1A4B700CD241B /* OGOrder+Assets.swift in Sources */,
 				7AF9028423A1A3DE00CD241B /* UIAlertController+OKCancel.swift in Sources */,
 				3B1EDCA223A2BD1A00216DC0 /* Constants.swift in Sources */,
+				3BBC918423A414B700DF5AE4 /* STDepthFramePublic.mm in Sources */,
 				7AA12011238F1F38006AF420 /* OGAsset.swift in Sources */,
 				7A1535692384A046003FF22E /* AppDelegate.swift in Sources */,
 				3BC544C123A2850A0071E78E /* DateFormattingManager.swift in Sources */,
 				7A2E9B7323A19E55004A449B /* OrderScansViewController.swift in Sources */,
 				7AA1200F238F1F33006AF420 /* OGPatient.swift in Sources */,
 				7A207984238B64A2009447BB /* SimpleListViewController.swift in Sources */,
+				3BBC917723A414B700DF5AE4 /* ScanViewController+OpenGL.mm in Sources */,
 				7AF9029423A1A4B700CD241B /* OGPractitioner+Forms.swift in Sources */,
+				3BBC917923A414B700DF5AE4 /* ScanViewController.mm in Sources */,
 				7AF9028523A1A3DE00CD241B /* Date+format.swift in Sources */,
 				3BC544B323A2774A0071E78E /* PatientNewViewController.swift in Sources */,
 				7A15356B2384A046003FF22E /* SceneDelegate.swift in Sources */,
+				3BBC918023A414B700DF5AE4 /* CustomUIKitStyles.mm in Sources */,
 				7AA1200D238F1F2F006AF420 /* OGPractitioner.swift in Sources */,
 				7AF9028623A1A3DE00CD241B /* UImage+size.swift in Sources */,
+				3BBC917F23A414B700DF5AE4 /* STDepthFrame+Swizzle.mm in Sources */,
 				7AF9029223A1A4B700CD241B /* OGAsset+Data.swift in Sources */,
+				3BBC917523A414B700DF5AE4 /* ScanViewController+Camera.mm in Sources */,
+				3BBC918223A414B700DF5AE4 /* ViewpointController.mm in Sources */,
 				7AF9029723A1A4B700CD241B /* OGPatient+Forms.swift in Sources */,
 				7AA1200B238F1D6F006AF420 /* OGConvertable.swift in Sources */,
+				3BBC917A23A414B700DF5AE4 /* ScanViewController+SLAM.mm in Sources */,
 				3BC544BF23A285040071E78E /* AppInfo.swift in Sources */,
+				3BBC918D23A418BE00DF5AE4 /* ScanCViewController.m in Sources */,
+				3BBC918323A414B700DF5AE4 /* ScanViewController+Sensor.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,17 +821,84 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YE3HDA3J65;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CB_DB/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AWSCognito/AWSCognito.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AWSCore/AWSCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AWSS3/AWSS3.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CNPPopupController/CNPPopupController.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Calendar-iOS/Calendar_iOS.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FontAwesomeKit/FontAwesomeKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/M13Checkbox/M13Checkbox.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SSZipArchive/SSZipArchive.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/XLForm/XLForm.framework/Headers\"",
+					"$(PROJECT_DIR)/Structure.framework/Headers",
+				);
 				INFOPLIST_FILE = CB_DB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"iconv\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AWSCognito\"",
+					"-framework",
+					"\"AWSCore\"",
+					"-framework",
+					"\"AWSS3\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CNPPopupController\"",
+					"-framework",
+					"\"Calendar_iOS\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"CouchbaseLite\"",
+					"-framework",
+					"\"FontAwesomeKit\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"M13Checkbox\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SSZipArchive\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"XLForm\"",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rootHome.CB-DB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CB_DB/Controllers/Scans/CB_DB-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -668,16 +911,83 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YE3HDA3J65;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CB_DB/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AWSCognito/AWSCognito.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AWSCore/AWSCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AWSS3/AWSS3.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CNPPopupController/CNPPopupController.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Calendar-iOS/Calendar_iOS.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FontAwesomeKit/FontAwesomeKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/M13Checkbox/M13Checkbox.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SSZipArchive/SSZipArchive.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/XLForm/XLForm.framework/Headers\"",
+					"$(PROJECT_DIR)/Structure.framework/Headers",
+				);
 				INFOPLIST_FILE = CB_DB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"iconv\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AWSCognito\"",
+					"-framework",
+					"\"AWSCore\"",
+					"-framework",
+					"\"AWSS3\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CNPPopupController\"",
+					"-framework",
+					"\"Calendar_iOS\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"CouchbaseLite\"",
+					"-framework",
+					"\"FontAwesomeKit\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"M13Checkbox\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SSZipArchive\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"XLForm\"",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rootHome.CB-DB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CB_DB/Controllers/Scans/CB_DB-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;

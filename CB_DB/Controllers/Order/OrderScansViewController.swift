@@ -16,9 +16,7 @@ class OrderScansViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let test = Test()
-        let isTest = test.isTest
+        ScanC
     }
 
 }
@@ -38,3 +36,7 @@ extension OrderScansViewController: UICollectionViewDelegate, UICollectionViewDa
         return 1
     }
 }
+
+//extension OrderScansViewController: ScanViewControllerDelegate {
+//    scanViewController
+//}

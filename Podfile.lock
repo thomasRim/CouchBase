@@ -6,6 +6,7 @@ PODS:
   - AWSS3 (2.11.1):
     - AWSCore (= 2.11.1)
   - Calendar-iOS (0.13)
+  - CNPPopupController (0.2.1)
   - CouchbaseLite (2.6.3)
   - FontAwesomeKit (2.2.1):
     - FontAwesomeKit/Core (= 2.2.1)
@@ -28,6 +29,7 @@ PODS:
     - FontAwesomeKit/Core
   - FontAwesomeKit/Zocial (2.2.1):
     - FontAwesomeKit/Core
+  - M13Checkbox (1.1.2)
   - SSZipArchive (2.2.2)
   - SVProgressHUD (2.2.5)
   - XLForm (3.0.2)
@@ -38,8 +40,10 @@ DEPENDENCIES:
   - AWSCore (~> 2.11.0)
   - AWSS3 (~> 2.11.0)
   - Calendar-iOS
+  - CNPPopupController (= 0.2.1)
   - CouchbaseLite
   - FontAwesomeKit
+  - M13Checkbox (= 1.1.2)
   - SSZipArchive
   - SVProgressHUD
   - XLForm (= 3.0.2)
@@ -51,8 +55,10 @@ SPEC REPOS:
     - AWSCore
     - AWSS3
     - Calendar-iOS
+    - CNPPopupController
     - CouchbaseLite
     - FontAwesomeKit
+    - M13Checkbox
     - SSZipArchive
     - SVProgressHUD
     - XLForm
@@ -63,12 +69,14 @@ SPEC CHECKSUMS:
   AWSCore: 00093a1ff49b5d6ce5f1e4d83fe301486fc5034d
   AWSS3: 738419b8039230423e4734556983a463466a9d7a
   Calendar-iOS: a7bb0e6d2cee372e7e3de98d44d60ac7364be7f3
+  CNPPopupController: 4dcb4e5a70beb0ffcfe425cf462c3e808d3f2aa3
   CouchbaseLite: 1ef850e6f80ad834e856298a53f0428af4b259ed
   FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
+  M13Checkbox: 0c0bb08dcd144c4ea33f883b68270f3f56908ea2
   SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   XLForm: 7817ce29f3f259186e837bb7309ac7e5b7e9b883
 
-PODFILE CHECKSUM: 2dd67214d6c334a005262431df510fcbdd6586f5
+PODFILE CHECKSUM: 469eef2aa56497ed3344e1f14bd1f191d1a34c45
 
 COCOAPODS: 1.8.4

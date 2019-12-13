@@ -128,6 +128,7 @@ class PatientsMasterViewController : UIViewController {
         }
 
         tableView?.reloadData()
+        refreshControl.endRefreshing()
     }
 
     func registerNotifications() {
@@ -187,7 +188,12 @@ extension PatientsMasterViewController: UITableViewDelegate, UITableViewDataSour
             let patient = patients[indexPath.row]
             let cancelAction = UIAlertAction(title: "CCancel".localized(), style: .cancel, handler: nil)
             let proceedAction = UIAlertAction(title: "CDelete".localized(), style: .default) { (_) in
-                OGDatabaseManager.delete(patient)
+                DispatchQueue.main.async {
+                    patient.delete()
+//                    OGDatabaseManager.delete(patient)
+                    self.loadPatients()
+                }
+
             }
             UIAlertController.showAlert(title: "MDeletePatientAlertTitle".localized(),
                                         message: NSString(format: "MDeletePatientAlertMessage".localized() as NSString, patient.name()) as String, actions: [proceedAction, cancelAction], from: self)

@@ -49,8 +49,8 @@ class OGDatabaseManager: NSObject {
                     from: CBLQueryDataSource.database(OGDatabaseManager.shared.database),
                     where: CBLQueryExpression.property("entity")
                         .equal(to: CBLQueryExpression.string(OGClinic().entity))
-//                        .andExpression(CBLQueryExpression.property("practitionerId")
-//                            .equal(to: CBLQueryExpression.string(practitioner.id)))
+                        .andExpression(CBLQueryExpression.property("practitionerId")
+                            .equal(to: CBLQueryExpression.string(practitioner.id)))
                 , orderBy: [CBLQueryOrdering.property("name").ascending()])
 
         let result = executeQuery(query, forType: OGClinic.self)
@@ -244,7 +244,6 @@ class OGDatabaseManager: NSObject {
             }
 
         } catch {
-            //            fatalError("Error running the query")
             return ([], false)
         }
     }
@@ -263,10 +262,10 @@ class OGDatabaseManager: NSObject {
 
     @discardableResult
     static func delete(_ doc: OGConvertable?) -> Bool {
-        guard let doc = doc?.toDocument() else { return false }
+        guard let id = doc?.id else { return false }
 
         do {
-            try OGDatabaseManager.shared.database.delete(doc)
+            try OGDatabaseManager.shared.database.purgeDocument(withID: id)
             return true
         } catch let error {
             print("Document delete error: \(error.localizedDescription)")
@@ -278,7 +277,7 @@ class OGDatabaseManager: NSObject {
         do {
             try OGDatabaseManager.shared.database.close()
         } catch let error {
-            print("Document delete error: \(error.localizedDescription)")
+            print("Document close error: \(error.localizedDescription)")
         }
     }
 }
