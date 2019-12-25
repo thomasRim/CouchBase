@@ -40,7 +40,6 @@
 		3BBC918323A414B700DF5AE4 /* ScanViewController+Sensor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC917323A414B700DF5AE4 /* ScanViewController+Sensor.mm */; };
 		3BBC918423A414B700DF5AE4 /* STDepthFramePublic.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC917423A414B700DF5AE4 /* STDepthFramePublic.mm */; };
 		3BBC918A23A4170100DF5AE4 /* InsetLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC918923A4170100DF5AE4 /* InsetLabel.m */; };
-		3BBC918D23A418BE00DF5AE4 /* ScanCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC918C23A418BE00DF5AE4 /* ScanCViewController.m */; };
 		3BBC919023A419C900DF5AE4 /* InstructionPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC918F23A419C900DF5AE4 /* InstructionPopupController.m */; };
 		3BC544A723A274540071E78E /* FormLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544A623A274540071E78E /* FormLoadable.swift */; };
 		3BC544A923A2757E0071E78E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544A823A2757E0071E78E /* Notifications.swift */; };
@@ -53,6 +52,10 @@
 		3BC544BD23A281BC0071E78E /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544BC23A281BC0071E78E /* UIColor+hex.swift */; };
 		3BC544BF23A285040071E78E /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544BE23A285030071E78E /* AppInfo.swift */; };
 		3BC544C123A2850A0071E78E /* DateFormattingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC544C023A2850A0071E78E /* DateFormattingManager.swift */; };
+		7A05C6B723A536CD00A872FC /* ScannerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A05C6B623A536CD00A872FC /* ScannerView.storyboard */; };
+		7A05C6B923A5391100A872FC /* Data+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A05C6B823A5391100A872FC /* Data+hex.swift */; };
+		7A05C6BB23A5643500A872FC /* Date+workDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A05C6BA23A5643400A872FC /* Date+workDays.swift */; };
+		7A0D42CF23A5121400B6B822 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D42CE23A5121400B6B822 /* DateHelper.swift */; };
 		7A1535692384A046003FF22E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1535682384A046003FF22E /* AppDelegate.swift */; };
 		7A15356B2384A046003FF22E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A15356A2384A046003FF22E /* SceneDelegate.swift */; };
 		7A1535722384A04D003FF22E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1535712384A04D003FF22E /* Assets.xcassets */; };
@@ -148,8 +151,6 @@
 		3BBC917423A414B700DF5AE4 /* STDepthFramePublic.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STDepthFramePublic.mm; sourceTree = "<group>"; };
 		3BBC918823A4170100DF5AE4 /* InsetLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsetLabel.h; sourceTree = "<group>"; };
 		3BBC918923A4170100DF5AE4 /* InsetLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsetLabel.m; sourceTree = "<group>"; };
-		3BBC918B23A418BE00DF5AE4 /* ScanCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanCViewController.h; sourceTree = "<group>"; };
-		3BBC918C23A418BE00DF5AE4 /* ScanCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanCViewController.m; sourceTree = "<group>"; };
 		3BBC918E23A419C800DF5AE4 /* InstructionPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructionPopupController.h; sourceTree = "<group>"; };
 		3BBC918F23A419C900DF5AE4 /* InstructionPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionPopupController.m; sourceTree = "<group>"; };
 		3BC544A623A274540071E78E /* FormLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormLoadable.swift; path = Models/FormLoadable.swift; sourceTree = "<group>"; };
@@ -165,7 +166,10 @@
 		3BC544C023A2850A0071E78E /* DateFormattingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormattingManager.swift; sourceTree = "<group>"; };
 		44E42F9B3623D54543ACCF12 /* Pods-CB_DB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB_DB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CB_DB/Pods-CB_DB.debug.xcconfig"; sourceTree = "<group>"; };
 		686DAC9CABEEC3185F8381D2 /* Pods-CB_DB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB_DB.release.xcconfig"; path = "Target Support Files/Pods-CB_DB/Pods-CB_DB.release.xcconfig"; sourceTree = "<group>"; };
-		7A0D42C723A3052500B6B822 /* CB_DB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CB_DB-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A05C6B623A536CD00A872FC /* ScannerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScannerView.storyboard; sourceTree = "<group>"; };
+		7A05C6B823A5391100A872FC /* Data+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+hex.swift"; sourceTree = "<group>"; };
+		7A05C6BA23A5643400A872FC /* Date+workDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+workDays.swift"; sourceTree = "<group>"; };
+		7A0D42CE23A5121400B6B822 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		7A1535652384A046003FF22E /* CB_DB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CB_DB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1535682384A046003FF22E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A15356A2384A046003FF22E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -344,16 +348,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7A0D42C623A3050B00B6B822 /* Scans */ = {
-			isa = PBXGroup;
-			children = (
-				7A0D42C723A3052500B6B822 /* CB_DB-Bridging-Header.h */,
-				3BBC918B23A418BE00DF5AE4 /* ScanCViewController.h */,
-				3BBC918C23A418BE00DF5AE4 /* ScanCViewController.m */,
-			);
-			path = Scans;
-			sourceTree = "<group>";
-		};
 		7A15355C2384A046003FF22E = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +394,7 @@
 				3B1EDCA323A2C0EF00216DC0 /* Main.storyboard */,
 				7A2E9B6823A19DCB004A449B /* Order.storyboard */,
 				7A2E9B6923A19DCB004A449B /* Scans.storyboard */,
+				7A05C6B623A536CD00A872FC /* ScannerView.storyboard */,
 				7A2E9B5B23A19D3A004A449B /* ShortOrderInfo.storyboard */,
 			);
 			path = Storyboard;
@@ -408,14 +403,12 @@
 		7A2E9B5A23A19D05004A449B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7A20794E238B640D009447BB /* LoginViewController.swift */,
+				7AF3614623B4132300DAF6D4 /* Login */,
 				3BC544B923A277EA0071E78E /* Clinic */,
 				3BC544B823A277C50071E78E /* Patient */,
 				3BC544B723A277BC0071E78E /* Order */,
-				7A0D42C623A3050B00B6B822 /* Scans */,
-				3BC544BA23A27DA80071E78E /* PractitionerViewEditViewController.swift */,
-				7AF9028723A1A44D00CD241B /* DatePopoverViewController.swift */,
-				7A207983238B64A2009447BB /* SimpleListViewController.swift */,
+				7AF3614723B4133000DAF6D4 /* Practitioner */,
+				7AF3614823B4134400DAF6D4 /* Additional */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -470,10 +463,37 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		7AF3614623B4132300DAF6D4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7A20794E238B640D009447BB /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7AF3614723B4133000DAF6D4 /* Practitioner */ = {
+			isa = PBXGroup;
+			children = (
+				3BC544BA23A27DA80071E78E /* PractitionerViewEditViewController.swift */,
+			);
+			path = Practitioner;
+			sourceTree = "<group>";
+		};
+		7AF3614823B4134400DAF6D4 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				7AF9028723A1A44D00CD241B /* DatePopoverViewController.swift */,
+				7A207983238B64A2009447BB /* SimpleListViewController.swift */,
+			);
+			path = Additional;
+			sourceTree = "<group>";
+		};
 		7AF9027A23A1A35C00CD241B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				7AF9027F23A1A3DE00CD241B /* Date+format.swift */,
+				7A0D42CE23A5121400B6B822 /* DateHelper.swift */,
+				7A05C6BA23A5643400A872FC /* Date+workDays.swift */,
 				7AF9027C23A1A3DE00CD241B /* Enum_String+localized.swift */,
 				7AF9027B23A1A3DD00CD241B /* String+localize.swift */,
 				3B205B3B23A2884E0092F859 /* String+fileName.swift */,
@@ -481,6 +501,7 @@
 				7AF9028023A1A3DE00CD241B /* UImage+size.swift */,
 				7AF9027D23A1A3DE00CD241B /* UIView+cornerRadius.swift */,
 				3BC544BC23A281BC0071E78E /* UIColor+hex.swift */,
+				7A05C6B823A5391100A872FC /* Data+hex.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -562,6 +583,7 @@
 				7A2E9B6B23A19DCB004A449B /* Order.storyboard in Resources */,
 				7A2E9B6C23A19DCB004A449B /* Scans.storyboard in Resources */,
 				7A2E9B5D23A19D3A004A449B /* ShortOrderInfo.storyboard in Resources */,
+				7A05C6B723A536CD00A872FC /* ScannerView.storyboard in Resources */,
 				3BBC914E23A4076100DF5AE4 /* Localizable.strings in Resources */,
 				7A1535752384A04D003FF22E /* LaunchScreen.storyboard in Resources */,
 				7A1535722384A04D003FF22E /* Assets.xcassets in Resources */,
@@ -626,6 +648,8 @@
 				7A2E9B6523A19DB5004A449B /* OrderTabBarController.swift in Sources */,
 				7AF9028223A1A3DE00CD241B /* Enum_String+localized.swift in Sources */,
 				3BC544A723A274540071E78E /* FormLoadable.swift in Sources */,
+				7A05C6B923A5391100A872FC /* Data+hex.swift in Sources */,
+				7A0D42CF23A5121400B6B822 /* DateHelper.swift in Sources */,
 				3BBC918A23A4170100DF5AE4 /* InsetLabel.m in Sources */,
 				3BBC917E23A414B700DF5AE4 /* ObjFileEditor.m in Sources */,
 				7A2E9B7023A19E48004A449B /* ShortOrderInfoViewController.swift in Sources */,
@@ -645,6 +669,7 @@
 				3BC544B223A2774A0071E78E /* ClinicNewEditViewController.swift in Sources */,
 				7AF9028823A1A44D00CD241B /* DatePopoverViewController.swift in Sources */,
 				3B205B3E23A28EBB0092F859 /* OrderSubmissionManager.swift in Sources */,
+				7A05C6BB23A5643500A872FC /* Date+workDays.swift in Sources */,
 				3BBC919023A419C900DF5AE4 /* InstructionPopupController.m in Sources */,
 				3BBC917C23A414B700DF5AE4 /* STDepthFrame+ConstantDistance.mm in Sources */,
 				3BBC918123A414B700DF5AE4 /* MeshViewController.mm in Sources */,
@@ -680,7 +705,6 @@
 				7AA1200B238F1D6F006AF420 /* OGConvertable.swift in Sources */,
 				3BBC917A23A414B700DF5AE4 /* ScanViewController+SLAM.mm in Sources */,
 				3BC544BF23A285040071E78E /* AppInfo.swift in Sources */,
-				3BBC918D23A418BE00DF5AE4 /* ScanCViewController.m in Sources */,
 				3BBC918323A414B700DF5AE4 /* ScanViewController+Sensor.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -896,7 +920,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rootHome.CB-DB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CB_DB/Controllers/Scans/CB_DB-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -986,7 +1010,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rootHome.CB-DB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CB_DB/Controllers/Scans/CB_DB-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

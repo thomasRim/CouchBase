@@ -33,13 +33,4 @@ class OGClinic: OGConvertable {
     func practitioner() -> OGPractitioner? {
         return OGDatabaseManager.practitioner(for: self)
     }
-
-    func applyAction(_ action: OGConvertableAction) {
-        switch action {
-        case .saveUpdate:
-            OGDatabaseManager.save(self)
-        case .delete:
-            OGDatabaseManager.delete(self)
-        }
-    }
 }

@@ -62,13 +62,4 @@ class OGOrder: NSObject, OGConvertable {
     func patient() -> OGPatient? {
         return OGDatabaseManager.patient(for: self)
     }
-
-    func applyAction(_ action: OGConvertableAction) {
-        switch action {
-        case .saveUpdate:
-            OGDatabaseManager.save(self)
-        case .delete:
-            OGDatabaseManager.delete(self)
-        }
-    }
 }

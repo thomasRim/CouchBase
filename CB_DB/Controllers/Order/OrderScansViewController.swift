@@ -16,7 +16,6 @@ class OrderScansViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        ScanC
     }
 
 }

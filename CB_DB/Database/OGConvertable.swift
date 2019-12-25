@@ -25,6 +25,15 @@ protocol  OGConvertable: AnyObject, Codable {
 
 extension OGConvertable {
 
+    func applyAction(_ action: OGConvertableAction) {
+        switch action {
+        case .saveUpdate:
+            OGDatabaseManager.save(self)
+        case .delete:
+            OGDatabaseManager.delete(self)
+        }
+    }
+    
     func toDocument() -> CBLMutableDocument {
         let doc = CBLMutableDocument(id:id)
         let mirr = Mirror(reflecting: self)

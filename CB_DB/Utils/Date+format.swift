@@ -53,13 +53,6 @@ extension String {
     }
 }
 
-extension Data {
-    var hexString: String {
-        return map { String(format: "%02.2hhx", arguments: [$0]) }.joined()
-    }
-}
-
-
 extension Date {
     private static let locale = Locale(identifier: "en_US_POSIX")
     private static let gmtTimeZone = TimeZone(secondsFromGMT: 0)

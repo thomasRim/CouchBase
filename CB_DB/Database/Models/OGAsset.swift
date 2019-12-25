@@ -54,13 +54,4 @@ class OGAsset: NSObject, OGConvertable {
     func order() -> OGOrder? {
         return OGDatabaseManager.order(for: self)
     }
-
-    func applyAction(_ action: OGConvertableAction) {
-        switch action {
-        case .saveUpdate:
-            OGDatabaseManager.save(self)
-        case .delete:
-            OGDatabaseManager.delete(self)
-        }
-    }
 }

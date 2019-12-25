@@ -44,13 +44,4 @@ class OGPatient: OGConvertable {
         let lastNameString: String = self.lastName
         return "\(lastNameString), \(firstNameString)"
     }
-
-    func applyAction(_ action: OGConvertableAction) {
-        switch action {
-        case .saveUpdate:
-            OGDatabaseManager.save(self)
-        case .delete:
-            OGDatabaseManager.delete(self)
-        }
-    }
 }

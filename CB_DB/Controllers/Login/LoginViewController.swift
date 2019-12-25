@@ -39,6 +39,7 @@ class LoginViewController: UIViewController, SimpleListViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        _ = Date().adjust(.day, offset: 15).workingDaysFromToday()
     }
     
 

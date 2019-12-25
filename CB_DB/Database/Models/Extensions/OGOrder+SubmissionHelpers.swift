@@ -25,7 +25,7 @@ extension OGOrder {
         var orderDict: [String: Any] = [
             "uniqueId": self.id,
             "appVersion": AppInfo.sharedInfo.versionString as AnyObject,
-            "submittedAt": DateFormattingManager.sharedManager.estDateTimeFormatter.string(from: submittedAt),
+            "submittedAt": DateFormattingManager.estDateTimeFormatter.string(from: submittedAt),
             "assets": assetDicts,
             "shippingPreferenceType": self.shippingPreferenceType,
             "deliveryPreferenceType":self.deliveryPreferenceType,
@@ -94,7 +94,7 @@ extension OGOrder {
             return [ "type": asset.type,
                      "caption": asset.caption,
                      "filename": filename,
-                     "createdAt": DateFormattingManager.sharedManager.iso8601DateTimeFormatter.string(from: asset.createdAt)
+                     "createdAt": DateFormattingManager.iso8601DateTimeFormatter.string(from: asset.createdAt)
             ]
         } else {
             let scanName = asset.caption
@@ -116,7 +116,7 @@ extension OGOrder {
 
                     "filename": filename,
                     "deviceSerial": asset.deviceSerial,
-                    "createdAt": DateFormattingManager.sharedManager.iso8601DateTimeFormatter.string(from: asset.createdAt) ]
+                    "createdAt": DateFormattingManager.iso8601DateTimeFormatter.string(from: asset.createdAt) ]
         }
     }
 }
